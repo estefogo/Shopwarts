@@ -8,11 +8,55 @@ import database.MySQL;
 public class tela_login extends javax.swing.JFrame {
     
     MySQL conectar = new MySQL(); //acessar os métodos de conexao com o banco
-  
+    
+    userInfo login = new userInfo();
+    
     public tela_login() {
         initComponents();
     }    
-   
+    
+    private void Login(userInfo login){
+        this.conectar.conectaBanco();
+
+        String consultaUsername = this.user.getText();
+        String consultaUserpassword = this.password.getText();
+
+        try {
+            this.conectar.executarSQL(
+                   "SELECT "
+                    + "user_name,"
+                    + "user_password"
+                 + " FROM"
+                     + " users"
+                 + " WHERE"
+                     + " user_name = '" + consultaUsername + "'"
+                + ";"
+            );
+
+            while(this.conectar.getResultSet().next()){
+                login.setUsername(this.conectar.getResultSet().getString(1));
+                login.setUserpassword(this.conectar.getResultSet().getString(2));
+           }
+
+        } catch (Exception e) {
+            System.out.println("Erro ao consultar cliente " +  e.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao buscar cliente");
+
+        }finally{
+            this.conectar.fechaBanco();
+            
+            if(this.password.getText().equals(login.getUserpassword()) 
+            && this.user.getText().equals(login.getUsername())) {
+                JOptionPane.showMessageDialog(null, "Login efetuado com sucesso."); 
+
+                new EntradaLiberada().setVisible(true);
+                dispose();
+
+       }else{
+           JOptionPane.showMessageDialog(null, "Usuário e/ou senha incorreto(s).");
+            }
+        }
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -23,9 +67,9 @@ public class tela_login extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         user = new javax.swing.JTextField();
-        password = new javax.swing.JTextField();
         labelusuario1 = new javax.swing.JLabel();
         labelusuario = new javax.swing.JLabel();
+        password = new javax.swing.JPasswordField();
         signIn = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
@@ -75,19 +119,6 @@ public class tela_login extends javax.swing.JFrame {
             }
         });
 
-        password.setBackground(new java.awt.Color(204, 204, 204));
-        password.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        password.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                passwordFocusGained(evt);
-            }
-        });
-        password.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passwordActionPerformed(evt);
-            }
-        });
-
         labelusuario1.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 14)); // NOI18N
         labelusuario1.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario1.setText("Usuário:");
@@ -95,6 +126,9 @@ public class tela_login extends javax.swing.JFrame {
         labelusuario.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 14)); // NOI18N
         labelusuario.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario.setText("Senha:");
+
+        password.setBackground(new java.awt.Color(204, 204, 204));
+        password.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         signIn.setBackground(new java.awt.Color(204, 204, 204));
         signIn.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 11)); // NOI18N
@@ -118,13 +152,13 @@ public class tela_login extends javax.swing.JFrame {
                             .addComponent(labelusuario)
                             .addComponent(labelusuario1))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(user, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(user, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
                             .addComponent(password))
                         .addGap(35, 35, 35))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addComponent(signIn, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(74, 74, 74))))
+                        .addGap(78, 78, 78))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -134,12 +168,11 @@ public class tela_login extends javax.swing.JFrame {
                     .addComponent(user, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(labelusuario1))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labelusuario))
-                .addGap(18, 18, 18)
-                .addComponent(signIn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labelusuario)
+                    .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addComponent(signIn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Sem_título-removebg-preview.png"))); // NOI18N
@@ -166,13 +199,12 @@ public class tela_login extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(labelusuario2)
-                .addContainerGap(22, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(20, 20, 20)
                 .addComponent(signUp, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(labelusuario2)
+                .addGap(0, 32, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -208,7 +240,7 @@ public class tela_login extends javax.swing.JFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -230,14 +262,6 @@ public class tela_login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void passwordFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_passwordFocusGained
-
-    }//GEN-LAST:event_passwordFocusGained
-
-    private void passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordActionPerformed
-
-    }//GEN-LAST:event_passwordActionPerformed
-
     private void userFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_userFocusGained
         // TODO add your handling code here:
     }//GEN-LAST:event_userFocusGained
@@ -247,8 +271,8 @@ public class tela_login extends javax.swing.JFrame {
     }//GEN-LAST:event_userActionPerformed
 
     private void signInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signInActionPerformed
-        // TODO add your handling code here:
-       
+    
+        Login(login);   
         
     }//GEN-LAST:event_signInActionPerformed
 
@@ -301,7 +325,7 @@ public class tela_login extends javax.swing.JFrame {
     private javax.swing.JLabel labelusuario;
     private javax.swing.JLabel labelusuario1;
     private javax.swing.JLabel labelusuario2;
-    private javax.swing.JTextField password;
+    private javax.swing.JPasswordField password;
     private javax.swing.JButton signIn;
     private javax.swing.JButton signUp;
     private javax.swing.JTextField user;
