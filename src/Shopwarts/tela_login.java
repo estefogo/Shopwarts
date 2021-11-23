@@ -49,7 +49,7 @@ public class tela_login extends javax.swing.JFrame {
             && this.user.getText().equals(login.getUsername())) {
                 JOptionPane.showMessageDialog(null, "Login efetuado com sucesso."); 
 
-                new materiaisBásicos().setVisible(true);
+                new pacotesDeAula().setVisible(true);
                 dispose();
 
        }else{

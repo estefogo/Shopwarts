@@ -112,14 +112,14 @@ public class CadastroAlunos extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(102, 102, 102));
 
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setBackground(new java.awt.Color(218, 165, 32));
         jLabel3.setFont(new java.awt.Font("Malgun Gothic Semilight", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(218, 165, 32));
         jLabel3.setText("Insira seus dados pessoais:");
 
-        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setBackground(new java.awt.Color(218, 165, 32));
         jLabel4.setFont(new java.awt.Font("Malgun Gothic Semilight", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(218, 165, 32));
         jLabel4.setText("Vamos lá!");
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
@@ -225,9 +225,9 @@ public class CadastroAlunos extends javax.swing.JFrame {
 
         jPanel5.setBackground(new java.awt.Color(102, 102, 102));
 
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setBackground(new java.awt.Color(218, 165, 32));
         jLabel2.setFont(new java.awt.Font("Malgun Gothic Semilight", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(218, 165, 32));
         jLabel2.setText("Criar conta:");
 
         jLabel5.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
@@ -247,7 +247,7 @@ public class CadastroAlunos extends javax.swing.JFrame {
             }
         });
 
-        finishRegister.setBackground(new java.awt.Color(204, 204, 204));
+        finishRegister.setBackground(new java.awt.Color(218, 165, 32));
         finishRegister.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
         finishRegister.setText("Cadastrar");
         finishRegister.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -259,7 +259,7 @@ public class CadastroAlunos extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/logo_cadastro.png"))); // NOI18N
 
-        backLoginPassword.setBackground(new java.awt.Color(204, 204, 204));
+        backLoginPassword.setBackground(new java.awt.Color(218, 165, 32));
         backLoginPassword.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
         backLoginPassword.setText("Voltar");
         backLoginPassword.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
