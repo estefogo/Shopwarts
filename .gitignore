@@ -1,1 +1,6 @@
-/dist/
+/dist
+/nbproject
+/teste
+/build
+build.xml
+manifest.mf
