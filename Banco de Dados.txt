@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS Shopwarts;
+CREATE DATABASE Shopwarts;
+USE Shopwarts;
+CREATE TABLE users (
+    rb int NOT null PRIMARY KEY,
+    nome varchar(40) NOT null,
+    birthday date,
+    street varchar(80) NOT null,
+    streetn int NOT null,
+    district varchar(80) NOT null,
+    house varchar(10) NOT null,
+    city varchar(80) NOT null,
+    user_name varchar(20) NOT null UNIQUE,
+    user_password varchar(20) NOT null
+);
