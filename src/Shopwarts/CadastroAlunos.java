@@ -4,13 +4,18 @@ import database.MySQL;
 import javax.swing.JOptionPane;
 
 public class CadastroAlunos extends javax.swing.JFrame {
-    MySQL conectar = new MySQL(); //acessar os métodos de conexao com o banco  
+    MySQL conectar = new MySQL(); //acessar os métodos de conexao com o banco
+    userInfo novoCliente = new userInfo(); //acessar os atributos da classe userInfo
+    int x = 0;
+
+  
     public CadastroAlunos() {
         initComponents();
     }
     
-    private void cadastraUser(){
-        this.conectar.conectaBanco();         
+    private void cadastraUser(userInfo novoCliente){
+        this.conectar.conectaBanco(); 
+        
         try {
                         
             this.conectar.insertSQL("INSERT INTO users ("
@@ -21,9 +26,9 @@ public class CadastroAlunos extends javax.swing.JFrame {
                     + "birthday,"                    
                     + "street,"
                     + "district,"
-                    + "city,"                    
-                    + "house,"
-                    + "streetn"
+                    + "city,"  
+                    + "streetn,"
+                    + "house"
                     
                 + ") VALUES ("
                     + "'" + usernameField.getText() + "',"
@@ -34,8 +39,8 @@ public class CadastroAlunos extends javax.swing.JFrame {
                     + "'" + userStreetField.getText() + "',"
                     + "'" + districtField.getText() + "',"
                     + "'" + cityField.getText() + "',"
-                    + "'" + houseField.getSelectedItem() + "',"
-                    + "'" + houseNumField.getText() + "'"
+                    + "'" + houseNumberField.getText() + "',"
+                    + "'" + houseField.getSelectedItem()+ "'"
                 + ");");
             
         } catch (Exception e) {
@@ -60,7 +65,7 @@ public class CadastroAlunos extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         fullNameField = new javax.swing.JTextField();
         userStreetField = new javax.swing.JTextField();
-        houseNumField = new javax.swing.JTextField();
+        houseNumberField = new javax.swing.JTextField();
         labelusuario1 = new javax.swing.JLabel();
         labelusuario3 = new javax.swing.JLabel();
         labelusuario9 = new javax.swing.JLabel();
@@ -126,12 +131,12 @@ public class CadastroAlunos extends javax.swing.JFrame {
             }
         });
 
-        houseNumField.setBackground(new java.awt.Color(51, 51, 51));
-        houseNumField.setForeground(new java.awt.Color(255, 255, 255));
-        houseNumField.setBorder(null);
-        houseNumField.addActionListener(new java.awt.event.ActionListener() {
+        houseNumberField.setBackground(new java.awt.Color(51, 51, 51));
+        houseNumberField.setForeground(new java.awt.Color(255, 255, 255));
+        houseNumberField.setBorder(null);
+        houseNumberField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                houseNumFieldActionPerformed(evt);
+                houseNumberFieldActionPerformed(evt);
             }
         });
 
@@ -283,7 +288,7 @@ public class CadastroAlunos extends javax.swing.JFrame {
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                                .addGap(0, 8, Short.MAX_VALUE)
+                                .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(backLoginPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(38, 38, 38)
                                 .addComponent(finishRegister, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))))
@@ -356,7 +361,7 @@ public class CadastroAlunos extends javax.swing.JFrame {
                                             .addGap(25, 25, 25)
                                             .addComponent(labelusuario10))
                                         .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addComponent(houseNumField, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(houseNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGap(18, 18, 18)
                                             .addComponent(labelusuario7)))
                                     .addGap(18, 18, 18)
@@ -397,7 +402,7 @@ public class CadastroAlunos extends javax.swing.JFrame {
                     .addComponent(userStreetField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(houseNumField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(houseNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(labelusuario4)
                     .addComponent(labelusuario7)
                     .addComponent(districtField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -474,14 +479,15 @@ public class CadastroAlunos extends javax.swing.JFrame {
     }//GEN-LAST:event_backLoginPasswordActionPerformed
 
     private void finishRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finishRegisterActionPerformed
-             
-        // Cadastro do usuário
-        cadastraUser();
-        
-        // Fechar teka de cadastro e abrir tela de login
-        new tela_login().setVisible(true);
-        dispose();
-        
+        // TODO add your handling code here:
+        if(x == 1) {
+
+        } else {
+            cadastraUser(novoCliente);
+            novoCliente.limpaVar();
+            new tela_login().setVisible(true);
+            dispose();
+        }
     }//GEN-LAST:event_finishRegisterActionPerformed
 
     private void rbFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbFieldActionPerformed
@@ -500,9 +506,9 @@ public class CadastroAlunos extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_districtFieldActionPerformed
 
-    private void houseNumFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_houseNumFieldActionPerformed
+    private void houseNumberFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_houseNumberFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_houseNumFieldActionPerformed
+    }//GEN-LAST:event_houseNumberFieldActionPerformed
 
     private void userStreetFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userStreetFieldActionPerformed
         // TODO add your handling code here:
@@ -559,7 +565,7 @@ public class CadastroAlunos extends javax.swing.JFrame {
     private javax.swing.JButton finishRegister;
     private javax.swing.JTextField fullNameField;
     private javax.swing.JComboBox<String> houseField;
-    private javax.swing.JTextField houseNumField;
+    private javax.swing.JTextField houseNumberField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
