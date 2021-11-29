@@ -271,8 +271,18 @@ public class tela_login extends javax.swing.JFrame {
     }//GEN-LAST:event_userActionPerformed
 
     private void signInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signInActionPerformed
-    
-        Login(login);   
+        if(this.user.getText().equals("admin")) {
+            if(this.password.getText().equals("admin")) {
+                JOptionPane.showMessageDialog(null, "Login admin efetuado com sucesso.");
+                new admin().setVisible(true);
+                dispose();
+            } else {
+                JOptionPane.showMessageDialog(null, "Senha admin incorreta.");
+            }
+        } else {
+        Login(login);
+        } 
+           
         
     }//GEN-LAST:event_signInActionPerformed
 

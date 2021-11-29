@@ -5,7 +5,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Compra extends javax.swing.JFrame {
-    pacotesDeAula valor = new pacotesDeAula();
     
     int precoEntrega;
     int precoFinal;

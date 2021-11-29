@@ -3,8 +3,8 @@ package Shopwarts;
 
 public class userInfo {
     // atributos   
-    private String username = "";
-    private String userpassword = "";
+    private String username = "null";
+    private String userpassword = "null";
     private String birthday = "";
     private String city = "";
     private String district = "";
@@ -13,6 +13,7 @@ public class userInfo {
     private String street = "";
     private String streetN = "";
     private String house = "";
+    private String gringgots = "";
     
     // getter e setter
 
@@ -96,6 +97,14 @@ public class userInfo {
         this.house = house;
     }
     
+     public String getGringgots() {
+        return gringgots;
+    }
+
+    public void setGringgots(String gringgots) {
+        this.username = gringgots;
+    }
+    
     
     
     public void limpaVar() {
@@ -109,5 +118,6 @@ public class userInfo {
     street = "";
     streetN = "";
     house = "";
+    gringgots = "";
     }
 }
