@@ -91,6 +91,8 @@ public class admin extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Admin Shopwarts");
+        setAlwaysOnTop(true);
         setPreferredSize(new java.awt.Dimension(720, 470));
         setResizable(false);
 
@@ -267,6 +269,7 @@ public class admin extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void registrobruxoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrobruxoActionPerformed
