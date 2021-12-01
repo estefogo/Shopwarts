@@ -11,5 +11,6 @@ CREATE TABLE users (
     house varchar(10) NOT null,
     city varchar(80) NOT null,
     user_name varchar(20) NOT null UNIQUE,
-    user_password varchar(20) NOT null
+    user_password varchar(20) NOT null,
+    totalgringgots varchar(5) DEFAULT 0   
 );
