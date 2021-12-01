@@ -14,3 +14,33 @@ CREATE TABLE users (
     user_password varchar(20) NOT null,
     totalgringgots varchar(5) DEFAULT 0   
 );
+
+CREATE TABLE produtos (
+    id int PRIMARY KEY AUTO_INCREMENT NOT null,
+	nome varchar(20) NOT null,
+    preco int NOT null DEFAULT 100
+);
+
+INSERT INTO produtos (nome) 
+	VALUES ("Pacote Básico");
+
+INSERT INTO produtos (nome) 
+	VALUES ("Transfiguração");
+
+INSERT INTO produtos (nome) 
+	VALUES ("DCAT");
+
+INSERT INTO produtos (nome) 
+	VALUES ("Feitiços");
+
+INSERT INTO produtos (nome) 
+	VALUES ("História da Magia");
+    
+INSERT INTO produtos (nome) 
+	VALUES ("Herbologia");
+
+INSERT INTO produtos (nome) 
+	VALUES ("Astronomia");
+
+INSERT INTO produtos (nome) 
+	VALUES ("Poções");

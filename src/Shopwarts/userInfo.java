@@ -1,5 +1,7 @@
 package Shopwarts;
 
+import database.MySQL;
+
 
 public class userInfo {
     // atributos   
@@ -104,7 +106,6 @@ public class userInfo {
     public void setGringgots(String gringgots) {
         this.username = gringgots;
     }
-    
     
     
     public void limpaVar() {

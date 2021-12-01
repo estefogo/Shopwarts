@@ -8,6 +8,8 @@ public class pacotesDeAula extends javax.swing.JFrame {
     public pacotesDeAula() {
         initComponents();
     }
+    // atributos
+    userInfo usuario = new userInfo();    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -547,7 +549,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel11.setBackground(new java.awt.Color(102, 102, 102));
         jLabel11.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(51, 51, 51));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("DEFESA CONTRA AS ARTES DAS TREVAS");
         jLabel11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -832,7 +833,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel93.setBackground(new java.awt.Color(0, 0, 0));
         jLabel93.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
-        jLabel93.setForeground(new java.awt.Color(51, 51, 51));
         jLabel93.setText("Total: 50 Gringotts");
 
         jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gringotts-removebg-preview.png"))); // NOI18N
@@ -1027,7 +1027,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel173.setBackground(new java.awt.Color(102, 102, 102));
         jLabel173.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel173.setForeground(new java.awt.Color(51, 51, 51));
         jLabel173.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel173.setText("FEITIÇOS");
         jLabel173.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -1312,7 +1311,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel185.setBackground(new java.awt.Color(0, 0, 0));
         jLabel185.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
-        jLabel185.setForeground(new java.awt.Color(51, 51, 51));
         jLabel185.setText("Total: 50 Gringotts");
 
         jLabel186.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gringotts-removebg-preview.png"))); // NOI18N
@@ -1498,7 +1496,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel263.setBackground(new java.awt.Color(102, 102, 102));
         jLabel263.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel263.setForeground(new java.awt.Color(51, 51, 51));
         jLabel263.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel263.setText("ASTRONOMIA");
         jLabel263.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -1783,7 +1780,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel275.setBackground(new java.awt.Color(0, 0, 0));
         jLabel275.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
-        jLabel275.setForeground(new java.awt.Color(51, 51, 51));
         jLabel275.setText("Total: 50 Gringotts");
 
         jLabel276.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gringotts-removebg-preview.png"))); // NOI18N
@@ -1960,7 +1956,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel245.setBackground(new java.awt.Color(102, 102, 102));
         jLabel245.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel245.setForeground(new java.awt.Color(51, 51, 51));
         jLabel245.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel245.setText("ASTRONOMIA");
         jLabel245.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -2245,7 +2240,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel257.setBackground(new java.awt.Color(0, 0, 0));
         jLabel257.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
-        jLabel257.setForeground(new java.awt.Color(51, 51, 51));
         jLabel257.setText("Total: 50 Gringotts");
 
         jLabel258.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gringotts-removebg-preview.png"))); // NOI18N
@@ -2471,7 +2465,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel191.setBackground(new java.awt.Color(102, 102, 102));
         jLabel191.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel191.setForeground(new java.awt.Color(51, 51, 51));
         jLabel191.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel191.setText("PACOTE BÁSICO PARA AS AULAS");
         jLabel191.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -2756,14 +2749,13 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel203.setBackground(new java.awt.Color(0, 0, 0));
         jLabel203.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
-        jLabel203.setForeground(new java.awt.Color(51, 51, 51));
         jLabel203.setText("Total: 60 Gringotts");
 
         jLabel204.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gringotts-removebg-preview.png"))); // NOI18N
 
         sair1.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         sair1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
-        sair1.setText("Sair");
+        sair1.setText("Voltar");
         sair1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sair1ActionPerformed(evt);
@@ -2933,7 +2925,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel302.setBackground(new java.awt.Color(102, 102, 102));
         jLabel302.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel302.setForeground(new java.awt.Color(51, 51, 51));
         jLabel302.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel302.setText("TRANSFIGURAÇÃO");
         jLabel302.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -3000,14 +2991,13 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel350.setBackground(new java.awt.Color(0, 0, 0));
         jLabel350.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
-        jLabel350.setForeground(new java.awt.Color(51, 51, 51));
         jLabel350.setText("Total: 20 Gringotts");
 
         jLabel351.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gringotts-removebg-preview.png"))); // NOI18N
 
         sair2.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         sair2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
-        sair2.setText("Sair");
+        sair2.setText("Voltar");
         sair2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sair2ActionPerformed(evt);
@@ -3159,7 +3149,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel214.setBackground(new java.awt.Color(102, 102, 102));
         jLabel214.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel214.setForeground(new java.awt.Color(51, 51, 51));
         jLabel214.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel214.setText("DEFESA CONTRA AS ARTES DAS TREVAS");
         jLabel214.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -3406,14 +3395,13 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel363.setBackground(new java.awt.Color(0, 0, 0));
         jLabel363.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
-        jLabel363.setForeground(new java.awt.Color(51, 51, 51));
         jLabel363.setText("Total: 100 Gringotts");
 
         jLabel364.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gringotts-removebg-preview.png"))); // NOI18N
 
         sair3.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         sair3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
-        sair3.setText("Sair");
+        sair3.setText("voltar");
         sair3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sair3ActionPerformed(evt);
@@ -3635,7 +3623,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel225.setBackground(new java.awt.Color(102, 102, 102));
         jLabel225.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel225.setForeground(new java.awt.Color(51, 51, 51));
         jLabel225.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel225.setText("FEITIÇOS");
         jLabel225.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -3920,14 +3907,13 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel370.setBackground(new java.awt.Color(0, 0, 0));
         jLabel370.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
-        jLabel370.setForeground(new java.awt.Color(51, 51, 51));
         jLabel370.setText("Total: 30 Gringotts");
 
         jLabel371.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gringotts-removebg-preview.png"))); // NOI18N
 
         sair4.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         sair4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
-        sair4.setText("Sair");
+        sair4.setText("Voltar");
         sair4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sair4ActionPerformed(evt);
@@ -4097,7 +4083,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel236.setBackground(new java.awt.Color(102, 102, 102));
         jLabel236.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel236.setForeground(new java.awt.Color(51, 51, 51));
         jLabel236.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel236.setText("HISTÓRIA DA MAGIA");
         jLabel236.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -4382,14 +4367,13 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel377.setBackground(new java.awt.Color(0, 0, 0));
         jLabel377.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
-        jLabel377.setForeground(new java.awt.Color(51, 51, 51));
         jLabel377.setText("Total: 50 Gringotts");
 
         jLabel378.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gringotts-removebg-preview.png"))); // NOI18N
 
         sair5.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         sair5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
-        sair5.setText("Sair");
+        sair5.setText("Voltar");
         sair5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sair5ActionPerformed(evt);
@@ -4559,7 +4543,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel317.setBackground(new java.awt.Color(102, 102, 102));
         jLabel317.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel317.setForeground(new java.awt.Color(51, 51, 51));
         jLabel317.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel317.setText("HERBOLOGIA");
         jLabel317.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -4844,14 +4827,13 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel329.setBackground(new java.awt.Color(0, 0, 0));
         jLabel329.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
-        jLabel329.setForeground(new java.awt.Color(51, 51, 51));
         jLabel329.setText("Total: 50 Gringotts");
 
         jLabel330.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gringotts-removebg-preview.png"))); // NOI18N
 
         sair6.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         sair6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
-        sair6.setText("Sair");
+        sair6.setText("Voltar");
         sair6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sair6ActionPerformed(evt);
@@ -5021,7 +5003,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel335.setBackground(new java.awt.Color(102, 102, 102));
         jLabel335.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel335.setForeground(new java.awt.Color(51, 51, 51));
         jLabel335.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel335.setText("ASTRONOMIA");
         jLabel335.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -5306,14 +5287,13 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel347.setBackground(new java.awt.Color(0, 0, 0));
         jLabel347.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
-        jLabel347.setForeground(new java.awt.Color(51, 51, 51));
         jLabel347.setText("Total: 50 Gringotts");
 
         jLabel348.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gringotts-removebg-preview.png"))); // NOI18N
 
         sair7.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         sair7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
-        sair7.setText("Sair");
+        sair7.setText("Voltar");
         sair7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sair7ActionPerformed(evt);
@@ -5483,7 +5463,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel284.setBackground(new java.awt.Color(102, 102, 102));
         jLabel284.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel284.setForeground(new java.awt.Color(51, 51, 51));
         jLabel284.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel284.setText("POÇÕES");
         jLabel284.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -5768,14 +5747,13 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel296.setBackground(new java.awt.Color(0, 0, 0));
         jLabel296.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
-        jLabel296.setForeground(new java.awt.Color(51, 51, 51));
         jLabel296.setText("Total: 50 Gringotts");
 
         jLabel297.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gringotts-removebg-preview.png"))); // NOI18N
 
         sair8.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         sair8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
-        sair8.setText("Sair");
+        sair8.setText("Voltar");
         sair8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sair8ActionPerformed(evt);
@@ -5873,7 +5851,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jLabel307.setBackground(new java.awt.Color(102, 102, 102));
         jLabel307.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel307.setForeground(new java.awt.Color(51, 51, 51));
         jLabel307.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel307.setText("POÇÕES");
         jLabel307.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -5888,7 +5865,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         sair9.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         sair9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
-        sair9.setText("Sair");
+        sair9.setText("Voltar");
         sair9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sair9ActionPerformed(evt);
@@ -6021,50 +5998,40 @@ public class pacotesDeAula extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void fechar7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar7ActionPerformed
-        System.exit(0);
+        new tela_login().setVisible(true);
+        dispose();
     }//GEN-LAST:event_fechar7ActionPerformed
 
     private void sair8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair8ActionPerformed
-        new tela_login().setVisible(true);
+        escolherTela escolhertela = new escolherTela();
+        escolhertela.setUser(usuario.getUsername());
+        escolhertela.setVisible(true);
         dispose();
     }//GEN-LAST:event_sair8ActionPerformed
 
     private void comprarPocoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarPocoesActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-        //puxar os metodos e atributos dessa classe
-
-        aluno.precoCompra = 240; //atribui 50 ao preco do pacote
-
-        aluno.calculaGringotts(aluno.precoCompra);
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
+        Compra compra = new Compra();
+        compra.usuario.setUsername(usuario.getUsername());
+        compra.setVisible(true);
         dispose();
     }//GEN-LAST:event_comprarPocoesActionPerformed
 
     private void fechar6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar6ActionPerformed
-        System.exit(0);
+        new tela_login().setVisible(true);
+        dispose();
     }//GEN-LAST:event_fechar6ActionPerformed
 
     private void sair7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair7ActionPerformed
-        new tela_login().setVisible(true);
+        escolherTela escolhertela = new escolherTela();
+        escolhertela.setUser(usuario.getUsername());
+        escolhertela.setVisible(true);
         dispose();
     }//GEN-LAST:event_sair7ActionPerformed
 
     private void comprarAstronomiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarAstronomiaActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-        //puxar os metodos e atributos dessa classe
-
-        aluno.precoCompra = 20; //atribui 20 ao preco do pacote
-
-        aluno.calculaGringotts(aluno.precoCompra);
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
+        Compra compra = new Compra();
+        compra.usuario.setUsername(usuario.getUsername());
+        compra.setVisible(true);
         dispose();
     }//GEN-LAST:event_comprarAstronomiaActionPerformed
 
@@ -6073,141 +6040,112 @@ public class pacotesDeAula extends javax.swing.JFrame {
     }//GEN-LAST:event_fechar5ActionPerformed
 
     private void sair6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair6ActionPerformed
-        new tela_login().setVisible(true);
+        escolherTela escolhertela = new escolherTela();
+        escolhertela.setUser(usuario.getUsername());
+        escolhertela.setVisible(true);
         dispose();
     }//GEN-LAST:event_sair6ActionPerformed
 
     private void comprarHerbologiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarHerbologiaActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-        //puxar os metodos e atributos dessa classe
-
-        aluno.precoCompra = 40; //atribui 40 ao preco do pacote
-
-        aluno.calculaGringotts(aluno.precoCompra);
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
+        Compra compra = new Compra();
+        compra.usuario.setUsername(usuario.getUsername());
+        compra.setVisible(true);
         dispose();
     }//GEN-LAST:event_comprarHerbologiaActionPerformed
 
     private void fechar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar4ActionPerformed
-        System.exit(0);
+       new tela_login().setVisible(true);
+        dispose();
     }//GEN-LAST:event_fechar4ActionPerformed
 
     private void sair5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair5ActionPerformed
-        new tela_login().setVisible(true);
+        escolherTela escolhertela = new escolherTela();
+        escolhertela.setUser(usuario.getUsername());
+        escolhertela.setVisible(true);
         dispose();
     }//GEN-LAST:event_sair5ActionPerformed
 
     private void comprarHistoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarHistoriaActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-        //puxar os metodos e atributos dessa classe
-
-        aluno.precoCompra = 10; //atribui 10 ao preco do pacote
-
-        aluno.calculaGringotts(aluno.precoCompra);
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
+        Compra compra = new Compra();
+        compra.usuario.setUsername(usuario.getUsername());
+        compra.setVisible(true);
         dispose();
     }//GEN-LAST:event_comprarHistoriaActionPerformed
 
     private void fechar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar3ActionPerformed
-        System.exit(0);
+        new tela_login().setVisible(true);
+        dispose();
     }//GEN-LAST:event_fechar3ActionPerformed
 
     private void sair4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair4ActionPerformed
-        new tela_login().setVisible(true);
+        escolherTela escolhertela = new escolherTela();
+        escolhertela.setUser(usuario.getUsername());
+        escolhertela.setVisible(true);
         dispose();
     }//GEN-LAST:event_sair4ActionPerformed
 
     private void comprarFeiticosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarFeiticosActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-        //puxar os metodos e atributos dessa classe
-
-        aluno.precoCompra = 30; //atribui 30 ao preco do pacote
-
-        aluno.calculaGringotts(aluno.precoCompra);
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
+        Compra compra = new Compra();
+        compra.usuario.setUsername(usuario.getUsername());
+        compra.setVisible(true);
         dispose();
     }//GEN-LAST:event_comprarFeiticosActionPerformed
 
     private void fechar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar2ActionPerformed
-        System.exit(0);
+        new tela_login().setVisible(true);
+        dispose();
     }//GEN-LAST:event_fechar2ActionPerformed
 
     private void sair3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair3ActionPerformed
-        new tela_login().setVisible(true);
+        escolherTela escolhertela = new escolherTela();
+        escolhertela.setUser(usuario.getUsername());
+        escolhertela.setVisible(true);
         dispose();
     }//GEN-LAST:event_sair3ActionPerformed
 
     private void comprarDefesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarDefesaActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-        //puxar os metodos e atributos dessa classe
-
-        aluno.precoCompra = 100; //atribui 100 ao preco do pacote
-
-        aluno.calculaGringotts(aluno.precoCompra);
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
+        Compra compra = new Compra();
+        compra.usuario.setUsername(usuario.getUsername());
+        compra.setVisible(true);
         dispose();
     }//GEN-LAST:event_comprarDefesaActionPerformed
 
     private void fechar8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar8ActionPerformed
         // TODO add your handling code here:
+        new tela_login().setVisible(true);
+        dispose();
     }//GEN-LAST:event_fechar8ActionPerformed
 
     private void sair2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair2ActionPerformed
-        new tela_login().setVisible(true);
+        escolherTela escolhertela = new escolherTela();
+        escolhertela.setUser(usuario.getUsername());
+        escolhertela.setVisible(true);
         dispose();
     }//GEN-LAST:event_sair2ActionPerformed
 
     private void comprarPacoteBasico1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarPacoteBasico1ActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-        //puxar os metodos e atributos dessa classe
-
-        aluno.precoCompra = 20; //atribui 20 ao preco do pacote
-
-        aluno.calculaGringotts(aluno.precoCompra);
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
+        Compra compra = new Compra();
+        compra.usuario.setUsername(usuario.getUsername());
+        compra.setVisible(true);
         dispose();
     }//GEN-LAST:event_comprarPacoteBasico1ActionPerformed
 
     private void fecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fecharActionPerformed
-        System.exit(0);
+        new tela_login().setVisible(true);
+        dispose();
     }//GEN-LAST:event_fecharActionPerformed
 
     private void sair1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair1ActionPerformed
-        new tela_login().setVisible(true);
+        escolherTela escolhertela = new escolherTela();
+        escolhertela.setUser(usuario.getUsername());
+        escolhertela.setVisible(true);
         dispose();
     }//GEN-LAST:event_sair1ActionPerformed
 
     private void comprarPacoteBasicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarPacoteBasicoActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-        //puxar os metodos e atributos dessa classe
-
-        aluno.precoCompra = 60; //atribui 60 ao preco do pacote
-
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
+        Compra compra = new Compra();
+        compra.usuario.setUsername(usuario.getUsername());
+        compra.setVisible(true);
         dispose();
     }//GEN-LAST:event_comprarPacoteBasicoActionPerformed
 
@@ -6217,10 +6155,16 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
     private void sair9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair9ActionPerformed
         // TODO add your handling code here:
+        escolherTela escolhertela = new escolherTela();
+        escolhertela.setUser(usuario.getUsername());
+        escolhertela.setVisible(true);
+        dispose();
     }//GEN-LAST:event_sair9ActionPerformed
 
     private void fechar9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar9ActionPerformed
         // TODO add your handling code here:
+       new tela_login().setVisible(true);
+        dispose();
     }//GEN-LAST:event_fechar9ActionPerformed
 
     /**

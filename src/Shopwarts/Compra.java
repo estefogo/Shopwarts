@@ -3,17 +3,37 @@ package Shopwarts;
 import static java.lang.Thread.sleep;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import database.MySQL;
 
 public class Compra extends javax.swing.JFrame {
     
-    int precoEntrega;
-    int precoFinal;
+    // atributos
+    MySQL conectar = new MySQL();
+    userInfo usuario = new userInfo();
+    private int precoEntrega;
+    private int precoFinal;
+
+    public int getPrecoEntrega() {
+        return precoEntrega;
+    }
+
+    public void setPrecoEntrega(int precoEntrega) {
+        this.precoEntrega = precoEntrega;
+    }
+
+    public int getPrecoFinal() {
+        return precoFinal;
+    }
+
+    public void setPrecoFinal(int precoFinal) {
+        this.precoFinal = precoFinal;
+    }
+    
+    
     
     public Compra() {
         initComponents();
-        
-        
-    }
+    }   
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -54,7 +74,7 @@ public class Compra extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         Abas = new javax.swing.JTabbedPane();
         jPanel3 = new javax.swing.JPanel();
-        Gringotts = new javax.swing.JLabel();
+        Gringottstxt = new javax.swing.JLabel();
         attGringotts = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jPanel15 = new javax.swing.JPanel();
@@ -482,7 +502,7 @@ public class Compra extends javax.swing.JFrame {
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
         jPanel3.setPreferredSize(new java.awt.Dimension(856, 1444));
 
-        Gringotts.setForeground(new java.awt.Color(0, 0, 0));
+        Gringottstxt.setForeground(new java.awt.Color(0, 0, 0));
 
         attGringotts.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         attGringotts.setText("Exibir saldo de Gringotts:");
@@ -521,7 +541,7 @@ public class Compra extends javax.swing.JFrame {
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(entregaPaga, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -574,7 +594,7 @@ public class Compra extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
                         .addComponent(jLabel20)
                         .addGap(35, 35, 35)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
                 .addComponent(entregaGratuita, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34))
         );
@@ -632,7 +652,7 @@ public class Compra extends javax.swing.JFrame {
                 .addGroup(jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(voltarEntrega1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(finalizarCompra1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -645,17 +665,15 @@ public class Compra extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(attGringotts)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Gringotts, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Gringottstxt, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(162, 162, 162)
                         .addComponent(jLabel1))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addGap(0, 59, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(0, 193, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -663,7 +681,7 @@ public class Compra extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(attGringotts)
-                    .addComponent(Gringotts, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Gringottstxt, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1)
                 .addGap(24, 24, 24)
@@ -672,7 +690,7 @@ public class Compra extends javax.swing.JFrame {
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(898, Short.MAX_VALUE))
+                .addGap(0, 860, Short.MAX_VALUE))
         );
 
         Abas.addTab("Entrega", jPanel3);
@@ -1016,7 +1034,7 @@ public class Compra extends javax.swing.JFrame {
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addComponent(jPanel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1033,7 +1051,7 @@ public class Compra extends javax.swing.JFrame {
                 .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(899, Short.MAX_VALUE))
+                .addContainerGap(840, Short.MAX_VALUE))
         );
 
         Abas.addTab("Confirmar Pedido", jPanel4);
@@ -1310,7 +1328,7 @@ public class Compra extends javax.swing.JFrame {
                 .addComponent(jPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(898, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         Abas.addTab("Finalizar Compra", jPanel7);
@@ -1319,11 +1337,13 @@ public class Compra extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Abas, javax.swing.GroupLayout.DEFAULT_SIZE, 783, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(Abas, javax.swing.GroupLayout.PREFERRED_SIZE, 678, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Abas)
+            .addComponent(Abas, javax.swing.GroupLayout.DEFAULT_SIZE, 668, Short.MAX_VALUE)
         );
 
         pack();
@@ -1344,14 +1364,31 @@ public class Compra extends javax.swing.JFrame {
     }//GEN-LAST:event_entregaPagaActionPerformed
 
     private void attGringottsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_attGringottsActionPerformed
-        infosAluno aluno = new infosAluno();//cria um novo objeto do tipo infosAluno pra
-                                            //puxar os metodos e atributos dessa classe
+        this.conectar.conectaBanco();
+        try {
+            this.conectar.executarSQL(
+                   "SELECT "
+                    + "totalgringgots"
+                 + " FROM"
+                     + " users"
+                 + " WHERE"
+                     + " user_name = '" + usuario.getUsername() + "'"
+                + ";"
+            );
+
+            while(this.conectar.getResultSet().next()){               
+                String result = this.conectar.getResultSet().getString(1);
+                usuario.setGringgots(result);
+                this.Gringottstxt.setText(result);
+                System.out.println(result);                
+           }
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }finally{
+            this.conectar.fechaBanco();       
+        }
         
-        int totalGringotts = aluno.totalGringotts;
-
-        String totalGring = String.valueOf(totalGringotts);
-
-        Gringotts.setText(totalGring);
                   
     }//GEN-LAST:event_attGringottsActionPerformed
 
@@ -1377,14 +1414,30 @@ public class Compra extends javax.swing.JFrame {
     }//GEN-LAST:event_continuarComprando1ActionPerformed
 
     private void attGringotts2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_attGringotts2ActionPerformed
-        infosAluno aluno = new infosAluno();//cria um novo objeto do tipo infosAluno pra
-                                            //puxar os metodos e atributos dessa classe
-        
-        int totalGringotts = aluno.totalGringotts;
+       this.conectar.conectaBanco();
+        try {
+            this.conectar.executarSQL(
+                   "SELECT "
+                    + "totalgringgots"
+                 + " FROM"
+                     + " users"
+                 + " WHERE"
+                     + " user_name = '" + usuario.getUsername() + "'"
+                + ";"
+            );
 
-        String totalGring = String.valueOf(totalGringotts);
+            while(this.conectar.getResultSet().next()){               
+                String result = this.conectar.getResultSet().getString(1);
+                usuario.setGringgots(result);
+                this.Gringottstxt.setText(result);
+                System.out.println(result);                
+           }
 
-        Gringotts.setText(totalGring);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }finally{
+            this.conectar.fechaBanco();       
+        }
     }//GEN-LAST:event_attGringotts2ActionPerformed
 
     private void finalizarCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalizarCompraActionPerformed
@@ -1398,14 +1451,30 @@ public class Compra extends javax.swing.JFrame {
     }//GEN-LAST:event_voltarEntregaActionPerformed
 
     private void attGringotts1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_attGringotts1ActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-                                             //puxar os metodos e atributos dessa classe
-        
-        int totalGringotts = aluno.totalGringotts;
+      this.conectar.conectaBanco();
+        try {
+            this.conectar.executarSQL(
+                   "SELECT "
+                    + "totalgringgots"
+                 + " FROM"
+                     + " users"
+                 + " WHERE"
+                     + " user_name = '" + usuario.getUsername() + "'"
+                + ";"
+            );
 
-        String totalGring = String.valueOf(totalGringotts);
+            while(this.conectar.getResultSet().next()){               
+                String result = this.conectar.getResultSet().getString(1);
+                usuario.setGringgots(result);
+                this.Gringottstxt.setText(result);
+                System.out.println(result);                
+           }
 
-        Gringotts.setText(totalGring);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }finally{
+            this.conectar.fechaBanco();       
+        }
     }//GEN-LAST:event_attGringotts1ActionPerformed
 
     private void finalizarCompra1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalizarCompra1ActionPerformed
@@ -1464,9 +1533,9 @@ public class Compra extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTabbedPane Abas;
-    private javax.swing.JLabel Gringotts;
     private javax.swing.JLabel Gringotts1;
     private javax.swing.JLabel Gringotts2;
+    private javax.swing.JLabel Gringottstxt;
     private javax.swing.JButton attGringotts;
     private javax.swing.JButton attGringotts1;
     private javax.swing.JButton attGringotts2;

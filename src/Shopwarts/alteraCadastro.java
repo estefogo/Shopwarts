@@ -11,6 +11,9 @@ public class alteraCadastro extends javax.swing.JFrame {
     public alteraCadastro() {
         initComponents();
     }
+    
+    // atributos
+    userInfo usuario = new userInfo();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -22,8 +25,6 @@ public class alteraCadastro extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        registrobruxo = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         selectbtn = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         nomebruxo = new javax.swing.JTextField();
@@ -58,18 +59,11 @@ public class alteraCadastro extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Alterar Cadastro");
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
 
-        registrobruxo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                registrobruxoActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setText("Informe o Registro Bruxo:");
-
-        selectbtn.setText("Select");
+        selectbtn.setText("Voltar");
         selectbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 selectbtnActionPerformed(evt);
@@ -269,26 +263,17 @@ public class alteraCadastro extends javax.swing.JFrame {
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(8, 8, 8)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(registrobruxo, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(12, 12, 12)
-                                .addComponent(selectbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addComponent(selectbtn)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(jLabel1)
-                .addGap(5, 5, 5)
-                .addComponent(registrobruxo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(13, 13, 13)
+                .addGap(39, 39, 39)
                 .addComponent(selectbtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -303,14 +288,15 @@ public class alteraCadastro extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void registrobruxoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrobruxoActionPerformed
-
-    }//GEN-LAST:event_registrobruxoActionPerformed
-
     private void selectbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectbtnActionPerformed
-       
+        new escolherTela().setVisible(true);
+        escolherTela escolhertela = new escolherTela();
+        escolhertela.setUser(usuario.getUsername());
+        escolhertela.setVisible(true);
+        dispose();        
     }//GEN-LAST:event_selectbtnActionPerformed
 
     private void houseFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_houseFieldActionPerformed
@@ -369,7 +355,6 @@ public class alteraCadastro extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
@@ -386,7 +371,6 @@ public class alteraCadastro extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField nomebruxo;
     private javax.swing.JTextField nomebruxo1;
-    private javax.swing.JTextField registrobruxo;
     private javax.swing.JButton selectbtn;
     // End of variables declaration//GEN-END:variables
 }
