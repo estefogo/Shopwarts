@@ -1,14 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Shopwarts;
 
-/**
- *
- * @author Rafaela
- */
+import database.MySQL;
+import javax.swing.JOptionPane;
+
 public class alteraCadastro extends javax.swing.JFrame {
 
     /**
@@ -316,37 +310,7 @@ public class alteraCadastro extends javax.swing.JFrame {
     }//GEN-LAST:event_registrobruxoActionPerformed
 
     private void selectbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectbtnActionPerformed
-        // TODO add your handling code here:
-        this.conectar.conectaBanco();
-        try {
-            this.conectar.executarSQL(
-                "SELECT "
-                + "rb,"
-                + "nome,"
-                + "house"
-                + " FROM"
-                + " users"
-                + " WHERE"
-                + " rb = '" + this.registrobruxo.getText() + "'"
-                + ";"
-            );
-
-            while(this.conectar.getResultSet().next()){
-                if(this.conectar.getResultSet().getString(1).equals(this.registrobruxo.getText())) {
-                    this.nomebruxo.setText(this.conectar.getResultSet().getString(2));
-                    this.casabruxo.setText(this.conectar.getResultSet().getString(3));
-                    usuario.setNome(this.conectar.getResultSet().getString(2));
-                    usuario.setHouse(this.conectar.getResultSet().getString(3));
-                }
-            }
-
-        } catch (Exception e) {
-            System.out.println("Erro ao buscar bruxo " +  e.getMessage());
-            JOptionPane.showMessageDialog(null, "Erro ao buscar bruxo");
-
-        }finally{
-            this.conectar.fechaBanco();
-        }
+       
     }//GEN-LAST:event_selectbtnActionPerformed
 
     private void houseFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_houseFieldActionPerformed
