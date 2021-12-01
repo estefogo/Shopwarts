@@ -176,6 +176,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
         jPanel8 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -450,6 +451,12 @@ public class pacotesDeAula extends javax.swing.JFrame {
         jSeparator13 = new javax.swing.JSeparator();
         sair8 = new javax.swing.JButton();
         fechar7 = new javax.swing.JButton();
+        jScrollPane19 = new javax.swing.JScrollPane();
+        jPanel161 = new javax.swing.JPanel();
+        jLabel307 = new javax.swing.JLabel();
+        comprarPocoes1 = new javax.swing.JButton();
+        sair9 = new javax.swing.JButton();
+        fechar9 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -2366,6 +2373,17 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jPanel4.setLayout(null);
 
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 777, Short.MAX_VALUE)
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1501, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
@@ -2565,7 +2583,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
             .addGroup(jPanel148Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel149, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel148Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel196)
@@ -3255,7 +3273,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
             .addGroup(jPanel167Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel168, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel167Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel219)
@@ -3729,7 +3747,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
             .addGroup(jPanel174Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel175, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel174Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel230)
@@ -4191,7 +4209,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
             .addGroup(jPanel181Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel208, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel181Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel277)
@@ -4653,7 +4671,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
             .addGroup(jPanel239Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel240, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel239Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel322)
@@ -5115,7 +5133,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
             .addGroup(jPanel252Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel253, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel252Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel340)
@@ -5577,7 +5595,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
             .addGroup(jPanel209Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel210, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel209Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel289)
@@ -5849,6 +5867,78 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Poções", jScrollPane18);
 
+        jPanel161.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel161.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel161.setForeground(new java.awt.Color(255, 255, 255));
+
+        jLabel307.setBackground(new java.awt.Color(102, 102, 102));
+        jLabel307.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
+        jLabel307.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel307.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel307.setText("POÇÕES");
+        jLabel307.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        comprarPocoes1.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
+        comprarPocoes1.setText("COMPRAR");
+        comprarPocoes1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprarPocoes1ActionPerformed(evt);
+            }
+        });
+
+        sair9.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
+        sair9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
+        sair9.setText("Sair");
+        sair9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sair9ActionPerformed(evt);
+            }
+        });
+
+        fechar9.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
+        fechar9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/x-mark.png"))); // NOI18N
+        fechar9.setText("Fechar");
+        fechar9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fechar9ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel161Layout = new javax.swing.GroupLayout(jPanel161);
+        jPanel161.setLayout(jPanel161Layout);
+        jPanel161Layout.setHorizontalGroup(
+            jPanel161Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel161Layout.createSequentialGroup()
+                .addGroup(jPanel161Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel161Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(sair9, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(132, 132, 132)
+                        .addComponent(comprarPocoes1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(133, 133, 133)
+                        .addComponent(fechar9, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel161Layout.createSequentialGroup()
+                        .addGap(183, 183, 183)
+                        .addComponent(jLabel307, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(57, Short.MAX_VALUE))
+        );
+        jPanel161Layout.setVerticalGroup(
+            jPanel161Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel161Layout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel307, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(588, 588, 588)
+                .addGroup(jPanel161Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(comprarPocoes1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sair9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(fechar9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(825, Short.MAX_VALUE))
+        );
+
+        jScrollPane19.setViewportView(jPanel161);
+
+        jTabbedPane1.addTab("Produtos Avulsos", jScrollPane19);
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -5930,140 +6020,23 @@ public class pacotesDeAula extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton26ActionPerformed
 
-    private void comprarHerbologiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarHerbologiaActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-                                             //puxar os metodos e atributos dessa classe
+    private void fechar7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar7ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_fechar7ActionPerformed
 
-        aluno.precoCompra = 40; //atribui 40 ao preco do pacote
-
-        aluno.calculaGringotts(aluno.precoCompra);
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
-        dispose();
-    }//GEN-LAST:event_comprarHerbologiaActionPerformed
-
-    private void sair6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair6ActionPerformed
+    private void sair8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair8ActionPerformed
         new tela_login().setVisible(true);
         dispose();
-    }//GEN-LAST:event_sair6ActionPerformed
-
-    private void fechar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar5ActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_fechar5ActionPerformed
-
-    private void comprarAstronomiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarAstronomiaActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-                                             //puxar os metodos e atributos dessa classe
-
-        aluno.precoCompra = 20; //atribui 20 ao preco do pacote
-
-        aluno.calculaGringotts(aluno.precoCompra);
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
-        dispose();
-    }//GEN-LAST:event_comprarAstronomiaActionPerformed
-
-    private void sair7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair7ActionPerformed
-        new tela_login().setVisible(true);
-        dispose();
-    }//GEN-LAST:event_sair7ActionPerformed
-
-    private void fechar6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar6ActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_fechar6ActionPerformed
-
-    private void comprarDefesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarDefesaActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-                                             //puxar os metodos e atributos dessa classe
-
-        aluno.precoCompra = 100; //atribui 100 ao preco do pacote
-
-        aluno.calculaGringotts(aluno.precoCompra);
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
-        dispose();
-    }//GEN-LAST:event_comprarDefesaActionPerformed
-
-    private void sair3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair3ActionPerformed
-        new tela_login().setVisible(true);
-        dispose();
-    }//GEN-LAST:event_sair3ActionPerformed
-
-    private void fechar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar2ActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_fechar2ActionPerformed
-
-    private void comprarFeiticosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarFeiticosActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-                                             //puxar os metodos e atributos dessa classe
-
-        aluno.precoCompra = 30; //atribui 30 ao preco do pacote
-
-        aluno.calculaGringotts(aluno.precoCompra);
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
-        dispose();
-    }//GEN-LAST:event_comprarFeiticosActionPerformed
-
-    private void sair4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair4ActionPerformed
-        new tela_login().setVisible(true);
-        dispose();
-    }//GEN-LAST:event_sair4ActionPerformed
-
-    private void fechar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar3ActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_fechar3ActionPerformed
-
-    private void comprarHistoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarHistoriaActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-                                             //puxar os metodos e atributos dessa classe
-
-        aluno.precoCompra = 10; //atribui 10 ao preco do pacote
-
-        aluno.calculaGringotts(aluno.precoCompra);
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
-        dispose();
-    }//GEN-LAST:event_comprarHistoriaActionPerformed
-
-    private void sair5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair5ActionPerformed
-        new tela_login().setVisible(true);
-        dispose();
-    }//GEN-LAST:event_sair5ActionPerformed
-
-    private void fechar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar4ActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_fechar4ActionPerformed
+    }//GEN-LAST:event_sair8ActionPerformed
 
     private void comprarPocoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarPocoesActionPerformed
         infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-                                             //puxar os metodos e atributos dessa classe
+        //puxar os metodos e atributos dessa classe
 
         aluno.precoCompra = 240; //atribui 50 ao preco do pacote
 
         aluno.calculaGringotts(aluno.precoCompra);
         //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
 
         System.out.println(aluno.totalGringotts);
 
@@ -6071,14 +6044,149 @@ public class pacotesDeAula extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_comprarPocoesActionPerformed
 
-    private void sair8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair8ActionPerformed
+    private void fechar6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar6ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_fechar6ActionPerformed
+
+    private void sair7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair7ActionPerformed
         new tela_login().setVisible(true);
         dispose();
-    }//GEN-LAST:event_sair8ActionPerformed
+    }//GEN-LAST:event_sair7ActionPerformed
 
-    private void fechar7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar7ActionPerformed
+    private void comprarAstronomiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarAstronomiaActionPerformed
+        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
+        //puxar os metodos e atributos dessa classe
+
+        aluno.precoCompra = 20; //atribui 20 ao preco do pacote
+
+        aluno.calculaGringotts(aluno.precoCompra);
+        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
+
+        System.out.println(aluno.totalGringotts);
+
+        new Compra().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_comprarAstronomiaActionPerformed
+
+    private void fechar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar5ActionPerformed
         System.exit(0);
-    }//GEN-LAST:event_fechar7ActionPerformed
+    }//GEN-LAST:event_fechar5ActionPerformed
+
+    private void sair6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair6ActionPerformed
+        new tela_login().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_sair6ActionPerformed
+
+    private void comprarHerbologiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarHerbologiaActionPerformed
+        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
+        //puxar os metodos e atributos dessa classe
+
+        aluno.precoCompra = 40; //atribui 40 ao preco do pacote
+
+        aluno.calculaGringotts(aluno.precoCompra);
+        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
+
+        System.out.println(aluno.totalGringotts);
+
+        new Compra().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_comprarHerbologiaActionPerformed
+
+    private void fechar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar4ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_fechar4ActionPerformed
+
+    private void sair5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair5ActionPerformed
+        new tela_login().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_sair5ActionPerformed
+
+    private void comprarHistoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarHistoriaActionPerformed
+        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
+        //puxar os metodos e atributos dessa classe
+
+        aluno.precoCompra = 10; //atribui 10 ao preco do pacote
+
+        aluno.calculaGringotts(aluno.precoCompra);
+        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
+
+        System.out.println(aluno.totalGringotts);
+
+        new Compra().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_comprarHistoriaActionPerformed
+
+    private void fechar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar3ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_fechar3ActionPerformed
+
+    private void sair4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair4ActionPerformed
+        new tela_login().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_sair4ActionPerformed
+
+    private void comprarFeiticosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarFeiticosActionPerformed
+        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
+        //puxar os metodos e atributos dessa classe
+
+        aluno.precoCompra = 30; //atribui 30 ao preco do pacote
+
+        aluno.calculaGringotts(aluno.precoCompra);
+        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
+
+        System.out.println(aluno.totalGringotts);
+
+        new Compra().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_comprarFeiticosActionPerformed
+
+    private void fechar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar2ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_fechar2ActionPerformed
+
+    private void sair3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair3ActionPerformed
+        new tela_login().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_sair3ActionPerformed
+
+    private void comprarDefesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarDefesaActionPerformed
+        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
+        //puxar os metodos e atributos dessa classe
+
+        aluno.precoCompra = 100; //atribui 100 ao preco do pacote
+
+        aluno.calculaGringotts(aluno.precoCompra);
+        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
+
+        System.out.println(aluno.totalGringotts);
+
+        new Compra().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_comprarDefesaActionPerformed
+
+    private void fechar8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fechar8ActionPerformed
+
+    private void sair2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair2ActionPerformed
+        new tela_login().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_sair2ActionPerformed
+
+    private void comprarPacoteBasico1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarPacoteBasico1ActionPerformed
+        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
+        //puxar os metodos e atributos dessa classe
+
+        aluno.precoCompra = 20; //atribui 20 ao preco do pacote
+
+        aluno.calculaGringotts(aluno.precoCompra);
+        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
+
+        System.out.println(aluno.totalGringotts);
+
+        new Compra().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_comprarPacoteBasico1ActionPerformed
 
     private void fecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fecharActionPerformed
         System.exit(0);
@@ -6091,12 +6199,11 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
     private void comprarPacoteBasicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarPacoteBasicoActionPerformed
         infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-                                             //puxar os metodos e atributos dessa classe
+        //puxar os metodos e atributos dessa classe
 
         aluno.precoCompra = 60; //atribui 60 ao preco do pacote
 
         //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
 
         System.out.println(aluno.totalGringotts);
 
@@ -6104,30 +6211,17 @@ public class pacotesDeAula extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_comprarPacoteBasicoActionPerformed
 
-    private void comprarPacoteBasico1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarPacoteBasico1ActionPerformed
-        infosAluno aluno = new infosAluno(); //cria um novo objeto do tipo infosAluno pra
-                                             //puxar os metodos e atributos dessa classe
-
-        aluno.precoCompra = 20; //atribui 20 ao preco do pacote
-
-        aluno.calculaGringotts(aluno.precoCompra);
-        //atribui ao valor total de Gringotts o preço atual subtraido do preco da compra
-
-
-        System.out.println(aluno.totalGringotts);
-
-        new Compra().setVisible(true);
-        dispose();
-    }//GEN-LAST:event_comprarPacoteBasico1ActionPerformed
-
-    private void sair2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair2ActionPerformed
-        new tela_login().setVisible(true);
-        dispose();
-    }//GEN-LAST:event_sair2ActionPerformed
-
-    private void fechar8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar8ActionPerformed
+    private void comprarPocoes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarPocoes1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fechar8ActionPerformed
+    }//GEN-LAST:event_comprarPocoes1ActionPerformed
+
+    private void sair9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sair9ActionPerformed
+
+    private void fechar9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fechar9ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -6177,6 +6271,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     private javax.swing.JButton comprarPacoteBasico;
     private javax.swing.JButton comprarPacoteBasico1;
     private javax.swing.JButton comprarPocoes;
+    private javax.swing.JButton comprarPocoes1;
     private javax.swing.JButton fechar;
     private javax.swing.JButton fechar2;
     private javax.swing.JButton fechar3;
@@ -6185,6 +6280,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     private javax.swing.JButton fechar6;
     private javax.swing.JButton fechar7;
     private javax.swing.JButton fechar8;
+    private javax.swing.JButton fechar9;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton2;
@@ -6324,6 +6420,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel300;
     private javax.swing.JLabel jLabel301;
     private javax.swing.JLabel jLabel302;
+    private javax.swing.JLabel jLabel307;
     private javax.swing.JLabel jLabel308;
     private javax.swing.JLabel jLabel309;
     private javax.swing.JLabel jLabel313;
@@ -6434,6 +6531,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel158;
     private javax.swing.JPanel jPanel159;
     private javax.swing.JPanel jPanel160;
+    private javax.swing.JPanel jPanel161;
     private javax.swing.JPanel jPanel162;
     private javax.swing.JPanel jPanel163;
     private javax.swing.JPanel jPanel164;
@@ -6551,6 +6649,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel46;
     private javax.swing.JPanel jPanel47;
     private javax.swing.JPanel jPanel48;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel75;
@@ -6568,6 +6667,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane16;
     private javax.swing.JScrollPane jScrollPane17;
     private javax.swing.JScrollPane jScrollPane18;
+    private javax.swing.JScrollPane jScrollPane19;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -6597,5 +6697,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
     private javax.swing.JButton sair6;
     private javax.swing.JButton sair7;
     private javax.swing.JButton sair8;
+    private javax.swing.JButton sair9;
     // End of variables declaration//GEN-END:variables
 }
