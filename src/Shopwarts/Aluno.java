@@ -3,7 +3,7 @@ package Shopwarts;
 import database.MySQL;
 
 
-public class userInfo {
+public class Aluno {
     // atributos   
     private String username = "null";
     private String userpassword = "null";

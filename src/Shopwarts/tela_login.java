@@ -9,13 +9,13 @@ public class tela_login extends javax.swing.JFrame {
     
     MySQL conectar = new MySQL(); //acessar os métodos de conexao com o banco
     
-    userInfo login = new userInfo();
+    Aluno login = new Aluno();
     
     public tela_login() {
         initComponents();
     }    
     
-    private void Login(userInfo login){
+    private void Login(Aluno login){
         this.conectar.conectaBanco();
 
         String consultaUsername = this.user.getText();

@@ -9,7 +9,7 @@ public class Compra extends javax.swing.JFrame {
     
     // atributos
     MySQL conectar = new MySQL();
-    userInfo usuario = new userInfo();
+    Aluno usuario = new Aluno();
     private int precoEntrega;
     private int precoFinal;
 
@@ -35,6 +35,12 @@ public class Compra extends javax.swing.JFrame {
         initComponents();
     }   
 
+   /* public int calculaGringotts(int precoCompra) {
+        this.totalGringotts = this.totalGringotts - precoCompra;
+        
+        return totalGringotts;
+    }*/
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -1351,9 +1357,9 @@ public class Compra extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void entregaPagaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entregaPagaActionPerformed
-        infosAluno aluno = new infosAluno();
+
         precoEntrega = 30;
-        precoFinal = aluno.precoCompra + precoEntrega; //60+30
+       // precoFinal = aluno.precoCompra + precoEntrega; //60+30
         precoFrete.setText("G$30,00"); //LABEL
         enderecoEntrega.setText("Entrega no endereço cadastrado"); //LABEL
         String precoFinalString = String.valueOf(precoFinal);
@@ -1394,12 +1400,12 @@ public class Compra extends javax.swing.JFrame {
 
     private void entregaGratuitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entregaGratuitaActionPerformed
         //NÃO TA PUXANDO O VALOR DO PACOTE QUE COMPROU, ARRUMAAAAAAAR
-        infosAluno aluno = new infosAluno();
+       
         precoEntrega = 0;
         precoFrete.setText("Frete grátis");
         enderecoEntrega.setText("Departamento de Compras de Hogwarts");
         totalCompra.setText("G$50,00");
-        aluno.precoCompra = 50;
+       // aluno.precoCompra = 50;
         
         Abas.setSelectedIndex(1);
         
@@ -1441,8 +1447,8 @@ public class Compra extends javax.swing.JFrame {
     }//GEN-LAST:event_attGringotts2ActionPerformed
 
     private void finalizarCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalizarCompraActionPerformed
-        infosAluno aluno = new infosAluno();
-        aluno.calculaGringotts(aluno.precoCompra);
+       
+       // aluno.calculaGringotts(aluno.precoCompra);
         Abas.setSelectedIndex(2);
     }//GEN-LAST:event_finalizarCompraActionPerformed
 

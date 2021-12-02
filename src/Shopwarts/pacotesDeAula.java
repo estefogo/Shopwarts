@@ -9,7 +9,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
         initComponents();
     }
     // atributos
-    userInfo usuario = new userInfo();    
+    Aluno usuario = new Aluno();    
 
     /**
      * This method is called from within the constructor to initialize the form.

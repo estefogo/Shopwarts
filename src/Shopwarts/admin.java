@@ -12,7 +12,7 @@ public class admin extends javax.swing.JFrame {
     }
 
     MySQL conectar = new MySQL();
-    userInfo usuario = new userInfo();
+    Aluno usuario = new Aluno();
     Produtos produto = new Produtos();
     String tamanhobancostr;
     int tamanhobanco;
