@@ -119,11 +119,11 @@ public class tela_login extends javax.swing.JFrame {
             }
         });
 
-        labelusuario1.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 14)); // NOI18N
+        labelusuario1.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         labelusuario1.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario1.setText("Usuário:");
 
-        labelusuario.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 14)); // NOI18N
+        labelusuario.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         labelusuario.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario.setText("Senha:");
 
@@ -131,7 +131,7 @@ public class tela_login extends javax.swing.JFrame {
         password.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         signIn.setBackground(new java.awt.Color(204, 204, 204));
-        signIn.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 11)); // NOI18N
+        signIn.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         signIn.setText("Entrar");
         signIn.setBorder(null);
         signIn.addActionListener(new java.awt.event.ActionListener() {
@@ -158,7 +158,7 @@ public class tela_login extends javax.swing.JFrame {
                         .addGap(44, 44, 44))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addComponent(signIn, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(83, 83, 83))))
+                        .addGap(82, 82, 82))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -171,8 +171,9 @@ public class tela_login extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(labelusuario)
                     .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-                .addComponent(signIn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(signIn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Sem_título-removebg-preview.png"))); // NOI18N
@@ -180,12 +181,12 @@ public class tela_login extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(0, 0, 0));
 
         labelusuario2.setBackground(new java.awt.Color(51, 51, 51));
-        labelusuario2.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 14)); // NOI18N
+        labelusuario2.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         labelusuario2.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario2.setText("  Ainda não tem uma conta?");
 
         signUp.setBackground(new java.awt.Color(204, 204, 204));
-        signUp.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 11)); // NOI18N
+        signUp.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         signUp.setText("Criar uma conta");
         signUp.setBorder(null);
         signUp.addActionListener(new java.awt.event.ActionListener() {
@@ -199,23 +200,22 @@ public class tela_login extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(labelusuario2))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(signUp, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap()
+                .addComponent(labelusuario2)
                 .addContainerGap(20, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(signUp, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addComponent(labelusuario2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(signUp, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -224,9 +224,11 @@ public class tela_login extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)))
                 .addGap(0, 57, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -242,7 +244,7 @@ public class tela_login extends javax.swing.JFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

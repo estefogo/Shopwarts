@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="title" type="java.lang.String" value="Alterar Cadastro"/>
@@ -23,13 +23,16 @@
 
   <Layout>
     <DimensionLayout dim="0">
-      <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" min="-2" max="-2" attributes="0"/>
+      <Group type="103" groupAlignment="1" attributes="0">
+          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="30" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -46,21 +49,17 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="voltar" min="-2" pref="115" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
+                          <Component id="apagarConta" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
+                          <Component id="finalizar" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                          <Component id="voltar" min="-2" pref="75" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="voltar1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="apagarConta" min="-2" pref="150" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -69,13 +68,21 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="35" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="voltar" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="apagarConta" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="voltar1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="voltar" min="-2" pref="48" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="finalizar" alignment="3" max="32767" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="apagarConta" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -129,8 +136,8 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="casa" min="-2" pref="116" max="-2" attributes="0"/>
-                              <EmptySpace pref="144" max="32767" attributes="0"/>
-                              <Component id="alteraCasa" min="-2" pref="69" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="alteraCasa" min="-2" pref="83" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -139,7 +146,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="257" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="270" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -258,11 +265,17 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel5">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Usu&#xe1;rio"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Senha"/>
               </Properties>
             </Component>
@@ -276,6 +289,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel9">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Nome"/>
               </Properties>
             </Component>
@@ -283,18 +299,24 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel10">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Data de Nascimento"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel15">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Casa"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="14" style="1"/>
+                  <Font name="Century Schoolbook" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Endere&#xe7;o:"/>
               </Properties>
@@ -302,7 +324,7 @@
             <Component class="javax.swing.JLabel" name="jLabel3">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="14" style="1"/>
+                  <Font name="Century Schoolbook" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Dados pessoais:"/>
               </Properties>
@@ -333,6 +355,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="alteraUsuario">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Alterar"/>
               </Properties>
               <Events>
@@ -341,6 +366,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="alteraSenha">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Alterar"/>
               </Properties>
               <Events>
@@ -349,6 +377,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="alteraNome">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Alterar"/>
               </Properties>
               <Events>
@@ -357,6 +388,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="alteraDataNasc">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Alterar"/>
               </Properties>
               <Events>
@@ -365,6 +399,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel7">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Cidade"/>
               </Properties>
             </Component>
@@ -372,6 +409,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel8">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Bairro"/>
               </Properties>
             </Component>
@@ -379,6 +419,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel16">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Rua"/>
               </Properties>
             </Component>
@@ -386,6 +429,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel17">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="N&#xfa;mero"/>
               </Properties>
             </Component>
@@ -393,6 +439,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="alteraCidade">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Alterar"/>
               </Properties>
               <Events>
@@ -401,6 +450,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="alteraBairro">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Alterar"/>
               </Properties>
               <Events>
@@ -409,6 +461,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="alteraRua">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Alterar"/>
               </Properties>
               <Events>
@@ -417,6 +472,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="alteraNumero">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Alterar"/>
               </Properties>
               <Events>
@@ -425,6 +483,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="alteraCasa">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Century Schoolbook" size="14" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Alterar"/>
               </Properties>
               <Events>
@@ -454,8 +515,34 @@
             </Component>
           </SubComponents>
         </Container>
+        <Component class="javax.swing.JButton" name="finalizar">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="ff" red="33" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Schoolbook" size="12" style="1"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagens/verifica.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Finalizar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="finalizarActionPerformed"/>
+          </Events>
+        </Component>
         <Component class="javax.swing.JButton" name="voltar">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="99" red="99" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Schoolbook" size="12" style="1"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagens/back-button.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Voltar"/>
           </Properties>
           <Events>
@@ -467,18 +554,16 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="ff" type="rgb"/>
             </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Schoolbook" size="12" style="1"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagens/deletar-usuario.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="APAGAR CONTA"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="apagarContaActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="voltar1">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Finalizar"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="voltar1ActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

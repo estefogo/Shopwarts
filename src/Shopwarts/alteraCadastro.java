@@ -56,9 +56,9 @@ public class alteraCadastro extends javax.swing.JFrame {
         alteraCasa = new javax.swing.JButton();
         senha = new javax.swing.JPasswordField();
         dataNascimento = new javax.swing.JFormattedTextField();
+        finalizar = new javax.swing.JButton();
         voltar = new javax.swing.JButton();
         apagarConta = new javax.swing.JButton();
-        voltar1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Alterar Cadastro");
@@ -74,23 +74,28 @@ public class alteraCadastro extends javax.swing.JFrame {
             }
         });
 
+        jLabel5.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jLabel5.setText("Usuário");
 
+        jLabel6.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jLabel6.setText("Senha");
 
         jSeparator1.setForeground(new java.awt.Color(1, 1, 1));
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
+        jLabel9.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jLabel9.setText("Nome");
 
+        jLabel10.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jLabel10.setText("Data de Nascimento");
 
+        jLabel15.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jLabel15.setText("Casa");
 
-        jLabel2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jLabel2.setText("Endereço:");
 
-        jLabel3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jLabel3.setText("Dados pessoais:");
 
         casa.setBackground(new java.awt.Color(204, 204, 204));
@@ -102,6 +107,7 @@ public class alteraCadastro extends javax.swing.JFrame {
             }
         });
 
+        alteraUsuario.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         alteraUsuario.setText("Alterar");
         alteraUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,6 +115,7 @@ public class alteraCadastro extends javax.swing.JFrame {
             }
         });
 
+        alteraSenha.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         alteraSenha.setText("Alterar");
         alteraSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,6 +123,7 @@ public class alteraCadastro extends javax.swing.JFrame {
             }
         });
 
+        alteraNome.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         alteraNome.setText("Alterar");
         alteraNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,6 +131,7 @@ public class alteraCadastro extends javax.swing.JFrame {
             }
         });
 
+        alteraDataNasc.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         alteraDataNasc.setText("Alterar");
         alteraDataNasc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,14 +139,19 @@ public class alteraCadastro extends javax.swing.JFrame {
             }
         });
 
+        jLabel7.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jLabel7.setText("Cidade");
 
+        jLabel8.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jLabel8.setText("Bairro");
 
+        jLabel16.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jLabel16.setText("Rua");
 
+        jLabel17.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jLabel17.setText("Número");
 
+        alteraCidade.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         alteraCidade.setText("Alterar");
         alteraCidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,6 +159,7 @@ public class alteraCadastro extends javax.swing.JFrame {
             }
         });
 
+        alteraBairro.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         alteraBairro.setText("Alterar");
         alteraBairro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,6 +167,7 @@ public class alteraCadastro extends javax.swing.JFrame {
             }
         });
 
+        alteraRua.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         alteraRua.setText("Alterar");
         alteraRua.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -159,6 +175,7 @@ public class alteraCadastro extends javax.swing.JFrame {
             }
         });
 
+        alteraNumero.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         alteraNumero.setText("Alterar");
         alteraNumero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -166,6 +183,7 @@ public class alteraCadastro extends javax.swing.JFrame {
             }
         });
 
+        alteraCasa.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         alteraCasa.setText("Alterar");
         alteraCasa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -218,15 +236,15 @@ public class alteraCadastro extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(casa, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 144, Short.MAX_VALUE)
-                        .addComponent(alteraCasa, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(alteraCasa, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel2)
-                        .addGap(0, 257, Short.MAX_VALUE))
+                        .addGap(0, 270, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel7)
@@ -314,6 +332,19 @@ public class alteraCadastro extends javax.swing.JFrame {
                 .addContainerGap(59, Short.MAX_VALUE))
         );
 
+        finalizar.setBackground(new java.awt.Color(51, 255, 51));
+        finalizar.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        finalizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/verifica.png"))); // NOI18N
+        finalizar.setText("Finalizar");
+        finalizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                finalizarActionPerformed(evt);
+            }
+        });
+
+        voltar.setBackground(new java.awt.Color(153, 153, 153));
+        voltar.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        voltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
         voltar.setText("Voltar");
         voltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -322,17 +353,12 @@ public class alteraCadastro extends javax.swing.JFrame {
         });
 
         apagarConta.setBackground(new java.awt.Color(255, 0, 0));
+        apagarConta.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        apagarConta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/deletar-usuario.png"))); // NOI18N
         apagarConta.setText("APAGAR CONTA");
         apagarConta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 apagarContaActionPerformed(evt);
-            }
-        });
-
-        voltar1.setText("Finalizar");
-        voltar1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                voltar1ActionPerformed(evt);
             }
         });
 
@@ -342,54 +368,58 @@ public class alteraCadastro extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(voltar, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(voltar1)
+                        .addComponent(voltar, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(159, 159, 159)
+                        .addComponent(apagarConta)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(apagarConta, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(17, 17, 17))))
+                        .addComponent(finalizar))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(voltar)
-                    .addComponent(apagarConta)
-                    .addComponent(voltar1))
-                .addGap(27, 27, 27))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(voltar, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(finalizar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(0, 0, Short.MAX_VALUE)
+                            .addComponent(apagarConta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarActionPerformed
+    private void finalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalizarActionPerformed
         new escolherTela().setVisible(true);
         escolherTela escolhertela = new escolherTela();
         escolhertela.setUser(usuario.getUsername());
         escolhertela.setVisible(true);
         dispose();        
-    }//GEN-LAST:event_voltarActionPerformed
+    }//GEN-LAST:event_finalizarActionPerformed
 
     private void casaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_casaActionPerformed
 
@@ -457,14 +487,13 @@ public class alteraCadastro extends javax.swing.JFrame {
         usuario.setUsername(this.usuarioBruxo.getText());
     }//GEN-LAST:event_alteraNumeroActionPerformed
 
-    private void voltar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltar1ActionPerformed
-        // TODO add your handling code here:
-        new escolherTela().setVisible(true);
+    private void voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarActionPerformed
+        // TODO add your handling code here:new escolherTela().setVisible(true);
         escolherTela escolhertela = new escolherTela();
         escolhertela.setUser(usuario.getUsername());
         escolhertela.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_voltar1ActionPerformed
+        dispose(); 
+    }//GEN-LAST:event_voltarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -516,6 +545,7 @@ public class alteraCadastro extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> casa;
     private javax.swing.JTextField cidade;
     private javax.swing.JFormattedTextField dataNascimento;
+    private javax.swing.JButton finalizar;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
@@ -536,6 +566,5 @@ public class alteraCadastro extends javax.swing.JFrame {
     private javax.swing.JPasswordField senha;
     private javax.swing.JTextField usuarioBruxo;
     private javax.swing.JButton voltar;
-    private javax.swing.JButton voltar1;
     // End of variables declaration//GEN-END:variables
 }
