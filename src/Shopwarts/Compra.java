@@ -11,7 +11,10 @@ public class Compra extends javax.swing.JFrame {
     MySQL conectar = new MySQL();
     Aluno usuario = new Aluno();
     private int precoEntrega;
+    private int precoProduto;
     private int precoFinal;
+    private String nomeProduto;
+    private String idProduto;
 
     public int getPrecoEntrega() {
         return precoEntrega;
@@ -28,18 +31,38 @@ public class Compra extends javax.swing.JFrame {
     public void setPrecoFinal(int precoFinal) {
         this.precoFinal = precoFinal;
     }
-    
-    
+
+    public int getPrecoProduto() {
+        return precoProduto;
+    }
+
+    public void setPrecoProduto(int precoProduto) {
+        this.precoProduto = precoProduto;
+    }
+
+    public String getNomeProduto() {
+        return nomeProduto;
+    }
+
+    public void setNomeProduto(String nomeProduto) {
+        this.nomeProduto = nomeProduto;
+    }
     
     public Compra() {
         initComponents();
     }   
 
-   /* public int calculaGringotts(int precoCompra) {
-        this.totalGringotts = this.totalGringotts - precoCompra;
-        
-        return totalGringotts;
-    }*/
+    public void calcularPreco() {
+        setPrecoFinal(getPrecoEntrega() + getPrecoProduto());
+    }
+
+    public String getIdProduto() {
+        return idProduto;
+    }
+
+    public void setIdProduto(String idProduto) {
+        this.idProduto = idProduto;
+    }
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -94,7 +117,6 @@ public class Compra extends javax.swing.JFrame {
         jLabel20 = new javax.swing.JLabel();
         jPanel32 = new javax.swing.JPanel();
         voltarEntrega1 = new javax.swing.JButton();
-        finalizarCompra1 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         attGringotts1 = new javax.swing.JButton();
         Gringotts1 = new javax.swing.JLabel();
@@ -113,8 +135,9 @@ public class Compra extends javax.swing.JFrame {
         jPanel24 = new javax.swing.JPanel();
         jPanel25 = new javax.swing.JPanel();
         precoItens = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
+        nomePacote = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        idPacote = new javax.swing.JLabel();
         jPanel31 = new javax.swing.JPanel();
         voltarEntrega = new javax.swing.JButton();
         finalizarCompra = new javax.swing.JButton();
@@ -547,7 +570,7 @@ public class Compra extends javax.swing.JFrame {
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(entregaPaga, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -633,31 +656,19 @@ public class Compra extends javax.swing.JFrame {
             }
         });
 
-        finalizarCompra1.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        finalizarCompra1.setText("Avançar");
-        finalizarCompra1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                finalizarCompra1ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel32Layout = new javax.swing.GroupLayout(jPanel32);
         jPanel32.setLayout(jPanel32Layout);
         jPanel32Layout.setHorizontalGroup(
             jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel32Layout.createSequentialGroup()
                 .addComponent(voltarEntrega1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(finalizarCompra1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(526, Short.MAX_VALUE))
         );
         jPanel32Layout.setVerticalGroup(
             jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel32Layout.createSequentialGroup()
                 .addGap(27, 27, 27)
-                .addGroup(jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(voltarEntrega1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(finalizarCompra1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(voltarEntrega1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -675,11 +686,14 @@ public class Compra extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(162, 162, 162)
                         .addComponent(jLabel1))
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(0, 193, Short.MAX_VALUE))
+                    .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 87, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -690,13 +704,13 @@ public class Compra extends javax.swing.JFrame {
                     .addComponent(Gringottstxt, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1)
-                .addGap(24, 24, 24)
-                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24)
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 860, Short.MAX_VALUE))
+                .addGap(0, 66, Short.MAX_VALUE))
         );
 
         Abas.addTab("Entrega", jPanel3);
@@ -873,11 +887,15 @@ public class Compra extends javax.swing.JFrame {
                 .addGap(22, 22, 22))
         );
 
-        jLabel19.setFont(new java.awt.Font("Century Schoolbook", 1, 18)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel19.setText("Pacote básico para aulas");
+        nomePacote.setFont(new java.awt.Font("Century Schoolbook", 1, 18)); // NOI18N
+        nomePacote.setForeground(new java.awt.Color(0, 0, 0));
+        nomePacote.setText("Pacote básico para aulas");
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/caixa.png"))); // NOI18N
+
+        idPacote.setFont(new java.awt.Font("Century Schoolbook", 1, 18)); // NOI18N
+        idPacote.setForeground(new java.awt.Color(0, 0, 0));
+        idPacote.setText("XX");
 
         javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
         jPanel24.setLayout(jPanel24Layout);
@@ -886,9 +904,13 @@ public class Compra extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel24Layout.createSequentialGroup()
                 .addGap(38, 38, 38)
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
-                .addComponent(jLabel19)
-                .addGap(49, 49, 49)
+                .addGap(40, 40, 40)
+                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(nomePacote)
+                    .addGroup(jPanel24Layout.createSequentialGroup()
+                        .addGap(99, 99, 99)
+                        .addComponent(idPacote)))
+                .addGap(50, 50, 50)
                 .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(54, Short.MAX_VALUE))
         );
@@ -896,14 +918,18 @@ public class Compra extends javax.swing.JFrame {
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel24Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19))
+                .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel24Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel24Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(idPacote)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(nomePacote)
+                .addGap(20, 20, 20))
         );
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -1037,9 +1063,11 @@ public class Compra extends javax.swing.JFrame {
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addGap(220, 220, 220)
                                 .addComponent(jLabel11))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addComponent(jPanel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jPanel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 663, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -1051,13 +1079,13 @@ public class Compra extends javax.swing.JFrame {
                     .addComponent(Gringotts1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel11)
-                .addGap(31, 31, 31)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
                 .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(840, Short.MAX_VALUE))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         Abas.addTab("Confirmar Pedido", jPanel4);
@@ -1343,9 +1371,7 @@ public class Compra extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(Abas, javax.swing.GroupLayout.PREFERRED_SIZE, 678, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(Abas, javax.swing.GroupLayout.PREFERRED_SIZE, 678, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1359,9 +1385,11 @@ public class Compra extends javax.swing.JFrame {
     private void entregaPagaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entregaPagaActionPerformed
 
         precoEntrega = 30;
-       // precoFinal = aluno.precoCompra + precoEntrega; //60+30
         precoFrete.setText("G$30,00"); //LABEL
-        enderecoEntrega.setText("Entrega no endereço cadastrado"); //LABEL
+        enderecoEntrega.setText("Entrega no endereço cadastrado");
+        nomePacote.setText(getNomeProduto());
+        idPacote.setText(getIdProduto());
+        calcularPreco();
         String precoFinalString = String.valueOf(precoFinal);
         totalCompra.setText("G$"+precoFinalString+",00");
         
@@ -1399,14 +1427,14 @@ public class Compra extends javax.swing.JFrame {
     }//GEN-LAST:event_attGringottsActionPerformed
 
     private void entregaGratuitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entregaGratuitaActionPerformed
-        //NÃO TA PUXANDO O VALOR DO PACOTE QUE COMPROU, ARRUMAAAAAAAR
-       
         precoEntrega = 0;
         precoFrete.setText("Frete grátis");
         enderecoEntrega.setText("Departamento de Compras de Hogwarts");
-        totalCompra.setText("G$"+ PRECO PRODUTO/PACOTE + ",00");
-       // aluno.precoCompra = 50;
-        
+        calcularPreco();
+        nomePacote.setText(getNomeProduto());
+        idPacote.setText(getIdProduto());
+        String precoFinalString = String.valueOf(precoFinal);
+        totalCompra.setText("G$"+precoFinalString+",00");
         Abas.setSelectedIndex(1);
         
     }//GEN-LAST:event_entregaGratuitaActionPerformed
@@ -1472,7 +1500,7 @@ public class Compra extends javax.swing.JFrame {
             while(this.conectar.getResultSet().next()){               
                 String result = this.conectar.getResultSet().getString(1);
                 usuario.setGringgots(result);
-                this.Gringottstxt.setText(result);
+                this.Gringotts1.setText(usuario.getGringgots());
                 System.out.println(result);                
            }
 
@@ -1483,12 +1511,11 @@ public class Compra extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_attGringotts1ActionPerformed
 
-    private void finalizarCompra1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalizarCompra1ActionPerformed
-        Abas.setSelectedIndex(1);
-    }//GEN-LAST:event_finalizarCompra1ActionPerformed
-
     private void voltarEntrega1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarEntrega1ActionPerformed
-        new pacotesDeAula().setVisible(true);
+        pacotesDeAula pacotesdeaula = new pacotesDeAula();
+        pacotesdeaula.usuario.setUsername(usuario.getUsername());
+        pacotesdeaula.setLabels();
+        pacotesdeaula.setVisible(true);
         dispose();
     }//GEN-LAST:event_voltarEntrega1ActionPerformed
 
@@ -1553,9 +1580,9 @@ public class Compra extends javax.swing.JFrame {
     private javax.swing.JButton fechar1;
     private javax.swing.JButton fecharFinalizar;
     private javax.swing.JButton finalizarCompra;
-    private javax.swing.JButton finalizarCompra1;
     private javax.swing.JLabel frete;
     private javax.swing.JLabel frete1;
+    private javax.swing.JLabel idPacote;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1565,7 +1592,6 @@ public class Compra extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
@@ -1629,6 +1655,7 @@ public class Compra extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JLabel nomePacote;
     private javax.swing.JLabel precoFrete;
     private javax.swing.JLabel precoItens;
     private javax.swing.JLabel totaal;
