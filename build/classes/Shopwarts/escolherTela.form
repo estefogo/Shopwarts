@@ -82,7 +82,7 @@
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="alterarCadastro" max="32767" attributes="0"/>
                           <Component id="compras" max="32767" attributes="0"/>
-                          <Component id="sair" min="-2" pref="197" max="-2" attributes="0"/>
+                          <Component id="sair" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace pref="69" max="32767" attributes="0"/>
                   </Group>

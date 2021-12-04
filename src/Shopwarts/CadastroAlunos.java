@@ -102,12 +102,12 @@ public class CadastroAlunos extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel3.setBackground(new java.awt.Color(218, 165, 32));
-        jLabel3.setFont(new java.awt.Font("Malgun Gothic Semilight", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(218, 165, 32));
         jLabel3.setText("Insira seus dados pessoais:");
 
         jLabel4.setBackground(new java.awt.Color(218, 165, 32));
-        jLabel4.setFont(new java.awt.Font("Malgun Gothic Semilight", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(218, 165, 32));
         jLabel4.setText("Vamos lá!");
 
@@ -140,23 +140,24 @@ public class CadastroAlunos extends javax.swing.JFrame {
             }
         });
 
-        labelusuario1.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        labelusuario1.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         labelusuario1.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario1.setText("Nome:");
 
-        labelusuario3.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        labelusuario3.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         labelusuario3.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario3.setText("Data de nascimento:");
 
-        labelusuario9.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        labelusuario9.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         labelusuario9.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario9.setText("Registro Bruxo:");
 
-        labelusuario10.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        labelusuario10.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         labelusuario10.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario10.setText("Casa:");
 
         houseField.setBackground(new java.awt.Color(204, 204, 204));
+        houseField.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         houseField.setForeground(new java.awt.Color(255, 255, 255));
         houseField.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Grifinória", "Sonserina", "Lufa-Lufa", "Corvinal" }));
         houseField.addActionListener(new java.awt.event.ActionListener() {
@@ -165,19 +166,19 @@ public class CadastroAlunos extends javax.swing.JFrame {
             }
         });
 
-        labelusuario2.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        labelusuario2.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         labelusuario2.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario2.setText("Endereço");
 
-        labelusuario6.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        labelusuario6.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         labelusuario6.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario6.setText("Rua:");
 
-        labelusuario4.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        labelusuario4.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         labelusuario4.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario4.setText("Número:");
 
-        labelusuario7.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        labelusuario7.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         labelusuario7.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario7.setText("Bairro:");
 
@@ -190,7 +191,7 @@ public class CadastroAlunos extends javax.swing.JFrame {
             }
         });
 
-        labelusuario5.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        labelusuario5.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         labelusuario5.setForeground(new java.awt.Color(255, 255, 255));
         labelusuario5.setText("Cidade:");
 
@@ -215,15 +216,15 @@ public class CadastroAlunos extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel2.setBackground(new java.awt.Color(218, 165, 32));
-        jLabel2.setFont(new java.awt.Font("Malgun Gothic Semilight", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(218, 165, 32));
         jLabel2.setText("Criar conta:");
 
-        jLabel5.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Usuário:");
 
-        jLabel6.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Senha:");
 
@@ -237,7 +238,8 @@ public class CadastroAlunos extends javax.swing.JFrame {
         });
 
         finishRegister.setBackground(new java.awt.Color(218, 165, 32));
-        finishRegister.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        finishRegister.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        finishRegister.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/verifica.png"))); // NOI18N
         finishRegister.setText("Cadastrar");
         finishRegister.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         finishRegister.addActionListener(new java.awt.event.ActionListener() {
@@ -249,7 +251,8 @@ public class CadastroAlunos extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/logo_cadastro.png"))); // NOI18N
 
         backLoginPassword.setBackground(new java.awt.Color(218, 165, 32));
-        backLoginPassword.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        backLoginPassword.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        backLoginPassword.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
         backLoginPassword.setText("Voltar");
         backLoginPassword.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         backLoginPassword.setPreferredSize(new java.awt.Dimension(81, 23));
@@ -288,7 +291,7 @@ public class CadastroAlunos extends javax.swing.JFrame {
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGap(0, 7, Short.MAX_VALUE)
                                 .addComponent(backLoginPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(38, 38, 38)
                                 .addComponent(finishRegister, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))))
@@ -314,10 +317,10 @@ public class CadastroAlunos extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel1)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(finishRegister, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(backLoginPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(17, 17, 17))
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(backLoginPassword, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(finishRegister, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         bornDateField.setBackground(new java.awt.Color(51, 51, 51));

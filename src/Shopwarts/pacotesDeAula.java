@@ -411,6 +411,12 @@ public class pacotesDeAula extends javax.swing.JFrame {
         jPanel7 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
+        jScrollPane19 = new javax.swing.JScrollPane();
+        jPanel161 = new javax.swing.JPanel();
+        jLabel307 = new javax.swing.JLabel();
+        comprarPocoes1 = new javax.swing.JButton();
+        sair9 = new javax.swing.JButton();
+        fechar9 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -624,12 +630,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
         jSeparator13 = new javax.swing.JSeparator();
         sair8 = new javax.swing.JButton();
         fechar7 = new javax.swing.JButton();
-        jScrollPane19 = new javax.swing.JScrollPane();
-        jPanel161 = new javax.swing.JPanel();
-        jLabel307 = new javax.swing.JLabel();
-        comprarPocoes1 = new javax.swing.JButton();
-        sair9 = new javax.swing.JButton();
-        fechar9 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -2548,6 +2548,75 @@ public class pacotesDeAula extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1501, Short.MAX_VALUE)
         );
+
+        jPanel161.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel161.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel161.setForeground(new java.awt.Color(255, 255, 255));
+
+        jLabel307.setBackground(new java.awt.Color(102, 102, 102));
+        jLabel307.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
+        jLabel307.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel307.setText("POÇÕES");
+        jLabel307.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        comprarPocoes1.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
+        comprarPocoes1.setText("COMPRAR");
+        comprarPocoes1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprarPocoes1ActionPerformed(evt);
+            }
+        });
+
+        sair9.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
+        sair9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
+        sair9.setText("Voltar");
+        sair9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sair9ActionPerformed(evt);
+            }
+        });
+
+        fechar9.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
+        fechar9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/x-mark.png"))); // NOI18N
+        fechar9.setText("Fechar");
+        fechar9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fechar9ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel161Layout = new javax.swing.GroupLayout(jPanel161);
+        jPanel161.setLayout(jPanel161Layout);
+        jPanel161Layout.setHorizontalGroup(
+            jPanel161Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel161Layout.createSequentialGroup()
+                .addGroup(jPanel161Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel161Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(sair9, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(132, 132, 132)
+                        .addComponent(comprarPocoes1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(133, 133, 133)
+                        .addComponent(fechar9, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel161Layout.createSequentialGroup()
+                        .addGap(183, 183, 183)
+                        .addComponent(jLabel307, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(73, Short.MAX_VALUE))
+        );
+        jPanel161Layout.setVerticalGroup(
+            jPanel161Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel161Layout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel307, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(588, 588, 588)
+                .addGroup(jPanel161Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(comprarPocoes1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sair9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(fechar9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(825, Short.MAX_VALUE))
+        );
+
+        jScrollPane19.setViewportView(jPanel161);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -5199,77 +5268,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
         jScrollPane18.setViewportView(jPanel156);
 
         jTabbedPane1.addTab("Poções", jScrollPane18);
-
-        jPanel161.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel161.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel161.setForeground(new java.awt.Color(255, 255, 255));
-
-        jLabel307.setBackground(new java.awt.Color(102, 102, 102));
-        jLabel307.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        jLabel307.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel307.setText("POÇÕES");
-        jLabel307.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        comprarPocoes1.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        comprarPocoes1.setText("COMPRAR");
-        comprarPocoes1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comprarPocoes1ActionPerformed(evt);
-            }
-        });
-
-        sair9.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        sair9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/back-button.png"))); // NOI18N
-        sair9.setText("Voltar");
-        sair9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sair9ActionPerformed(evt);
-            }
-        });
-
-        fechar9.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
-        fechar9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/x-mark.png"))); // NOI18N
-        fechar9.setText("Fechar");
-        fechar9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fechar9ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel161Layout = new javax.swing.GroupLayout(jPanel161);
-        jPanel161.setLayout(jPanel161Layout);
-        jPanel161Layout.setHorizontalGroup(
-            jPanel161Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel161Layout.createSequentialGroup()
-                .addGroup(jPanel161Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel161Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(sair9, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(132, 132, 132)
-                        .addComponent(comprarPocoes1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(133, 133, 133)
-                        .addComponent(fechar9, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel161Layout.createSequentialGroup()
-                        .addGap(183, 183, 183)
-                        .addComponent(jLabel307, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(73, Short.MAX_VALUE))
-        );
-        jPanel161Layout.setVerticalGroup(
-            jPanel161Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel161Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(jLabel307, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(588, 588, 588)
-                .addGroup(jPanel161Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comprarPocoes1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(sair9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(fechar9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(825, Short.MAX_VALUE))
-        );
-
-        jScrollPane19.setViewportView(jPanel161);
-
-        jTabbedPane1.addTab("Produtos Avulsos", jScrollPane19);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);

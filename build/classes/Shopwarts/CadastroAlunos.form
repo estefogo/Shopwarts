@@ -103,7 +103,7 @@
                   <Color blue="20" green="a5" red="da" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Malgun Gothic Semilight" size="14" style="1"/>
+                  <Font name="Century Schoolbook" size="14" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="20" green="a5" red="da" type="rgb"/>
@@ -117,7 +117,7 @@
                   <Color blue="20" green="a5" red="da" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Malgun Gothic Semilight" size="14" style="1"/>
+                  <Font name="Century Schoolbook" size="14" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="20" green="a5" red="da" type="rgb"/>
@@ -302,7 +302,7 @@
                 <Component class="javax.swing.JLabel" name="labelusuario1">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Malgun Gothic Semilight" size="12" style="0"/>
+                      <Font name="Century Schoolbook" size="12" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -313,7 +313,7 @@
                 <Component class="javax.swing.JLabel" name="labelusuario3">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Malgun Gothic Semilight" size="12" style="0"/>
+                      <Font name="Century Schoolbook" size="12" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -324,7 +324,7 @@
                 <Component class="javax.swing.JLabel" name="labelusuario9">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Malgun Gothic Semilight" size="12" style="0"/>
+                      <Font name="Century Schoolbook" size="12" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -335,7 +335,7 @@
                 <Component class="javax.swing.JLabel" name="labelusuario10">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Malgun Gothic Semilight" size="12" style="0"/>
+                      <Font name="Century Schoolbook" size="12" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -347,6 +347,9 @@
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Century Schoolbook" size="12" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -372,7 +375,7 @@
                 <Component class="javax.swing.JLabel" name="labelusuario2">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Malgun Gothic Semilight" size="12" style="0"/>
+                      <Font name="Century Schoolbook" size="12" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -383,7 +386,7 @@
                 <Component class="javax.swing.JLabel" name="labelusuario6">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Malgun Gothic Semilight" size="12" style="0"/>
+                      <Font name="Century Schoolbook" size="12" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -394,7 +397,7 @@
                 <Component class="javax.swing.JLabel" name="labelusuario4">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Malgun Gothic Semilight" size="12" style="0"/>
+                      <Font name="Century Schoolbook" size="12" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -405,7 +408,7 @@
                 <Component class="javax.swing.JLabel" name="labelusuario7">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Malgun Gothic Semilight" size="12" style="0"/>
+                      <Font name="Century Schoolbook" size="12" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -432,7 +435,7 @@
                 <Component class="javax.swing.JLabel" name="labelusuario5">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Malgun Gothic Semilight" size="12" style="0"/>
+                      <Font name="Century Schoolbook" size="12" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -503,7 +506,7 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                                           <Group type="102" alignment="1" attributes="0">
-                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <EmptySpace min="0" pref="7" max="32767" attributes="0"/>
                                               <Component id="backLoginPassword" min="-2" pref="134" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                                               <Component id="finishRegister" min="-2" pref="137" max="-2" attributes="0"/>
@@ -540,11 +543,11 @@
                                   </Group>
                               </Group>
                               <EmptySpace pref="8" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="finishRegister" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                                  <Component id="backLoginPassword" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="backLoginPassword" max="32767" attributes="0"/>
+                                  <Component id="finishRegister" max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -556,7 +559,7 @@
                           <Color blue="20" green="a5" red="da" type="rgb"/>
                         </Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Malgun Gothic Semilight" size="14" style="1"/>
+                          <Font name="Century Schoolbook" size="12" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="20" green="a5" red="da" type="rgb"/>
@@ -567,7 +570,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel5">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Malgun Gothic Semilight" size="12" style="0"/>
+                          <Font name="Century Schoolbook" size="12" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -578,7 +581,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel6">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Malgun Gothic Semilight" size="12" style="0"/>
+                          <Font name="Century Schoolbook" size="12" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -608,7 +611,10 @@
                           <Color blue="20" green="a5" red="da" type="rgb"/>
                         </Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Malgun Gothic Semilight" size="12" style="0"/>
+                          <Font name="Century Schoolbook" size="12" style="1"/>
+                        </Property>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/imagens/verifica.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Cadastrar"/>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -634,7 +640,10 @@
                           <Color blue="20" green="a5" red="da" type="rgb"/>
                         </Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Malgun Gothic Semilight" size="12" style="0"/>
+                          <Font name="Century Schoolbook" size="12" style="1"/>
+                        </Property>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/imagens/back-button.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Voltar"/>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
