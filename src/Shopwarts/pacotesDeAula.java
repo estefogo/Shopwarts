@@ -43,9 +43,214 @@ public class pacotesDeAula extends javax.swing.JFrame {
 
         }finally{
             System.out.println(pacote.getPreco());
+            System.out.println(pacote.getPacote());
             this.conectar.fechaBanco();         
         }
     }
+     
+     public void setLabels() {               
+         this.conectar.conectaBanco();
+         try {
+            this.conectar.executarSQL(
+                   "SELECT "
+                    + "id,"
+                    + "nome,"
+                    + "preco"
+                 + " FROM"
+                     + " produtos"
+                 + " WHERE"
+                     + " id = '" + 1 + "'"
+                + ";"
+            );
+
+            while(this.conectar.getResultSet().next()){               
+                jLabel203.setText("Total: " +  this.conectar.getResultSet().getString(3) + " Gringotts");                
+           }
+
+        } catch (Exception e) {
+            System.out.println("Erro ao puxar preço " +  e.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao puxar preço");
+
+        }finally{            
+            this.conectar.fechaBanco();         
+        }
+        this.conectar.conectaBanco();
+        try {
+            this.conectar.executarSQL(
+                   "SELECT "
+                    + "id,"
+                    + "nome,"
+                    + "preco"
+                 + " FROM"
+                     + " produtos"
+                 + " WHERE"
+                     + " id = '" + 2 + "'"
+                + ";"
+            );
+
+            while(this.conectar.getResultSet().next()){               
+                jLabel350.setText("Total: " +  this.conectar.getResultSet().getString(3) + " Gringotts");                
+           }
+
+        } catch (Exception e) {
+            System.out.println("Erro ao puxar preço " +  e.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao puxar preço");
+
+        }finally{            
+            this.conectar.fechaBanco();         
+        }
+        this.conectar.conectaBanco();
+        try {
+            this.conectar.executarSQL(
+                   "SELECT "
+                    + "id,"
+                    + "nome,"
+                    + "preco"
+                 + " FROM"
+                     + " produtos"
+                 + " WHERE"
+                     + " id = '" + 3 + "'"
+                + ";"
+            );
+
+            while(this.conectar.getResultSet().next()){               
+                jLabel363.setText("Total: " +  this.conectar.getResultSet().getString(3) + " Gringotts");                
+           }
+
+        } catch (Exception e) {
+            System.out.println("Erro ao puxar preço " +  e.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao puxar preço");
+
+        }finally{            
+            this.conectar.fechaBanco();         
+        }
+        this.conectar.conectaBanco();
+        try {
+            this.conectar.executarSQL(
+                   "SELECT "
+                    + "id,"
+                    + "nome,"
+                    + "preco"
+                 + " FROM"
+                     + " produtos"
+                 + " WHERE"
+                     + " id = '" + 4 + "'"
+                + ";"
+            );
+
+            while(this.conectar.getResultSet().next()){               
+                jLabel370.setText("Total: " +  this.conectar.getResultSet().getString(3) + " Gringotts");                
+           }
+
+        } catch (Exception e) {
+            System.out.println("Erro ao puxar preço " +  e.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao puxar preço");
+
+        }finally{            
+            this.conectar.fechaBanco();         
+        }
+        this.conectar.conectaBanco();
+        try {
+            this.conectar.executarSQL(
+                   "SELECT "
+                    + "id,"
+                    + "nome,"
+                    + "preco"
+                 + " FROM"
+                     + " produtos"
+                 + " WHERE"
+                     + " id = '" + 5 + "'"
+                + ";"
+            );
+
+            while(this.conectar.getResultSet().next()){               
+                historiamagialabel.setText("Total: " +  this.conectar.getResultSet().getString(3) + " Gringotts");                
+           }
+
+        } catch (Exception e) {
+            System.out.println("Erro ao puxar preço " +  e.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao puxar preço");
+
+        }finally{            
+            this.conectar.fechaBanco();         
+        }
+        this.conectar.conectaBanco();
+        try {
+            this.conectar.executarSQL(
+                   "SELECT "
+                    + "id,"
+                    + "nome,"
+                    + "preco"
+                 + " FROM"
+                     + " produtos"
+                 + " WHERE"
+                     + " id = '" + 6 + "'"
+                + ";"
+            );
+
+            while(this.conectar.getResultSet().next()){               
+                jLabel329.setText("Total: " +  this.conectar.getResultSet().getString(3) + " Gringotts");                
+           }
+
+        } catch (Exception e) {
+            System.out.println("Erro ao puxar preço " +  e.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao puxar preço");
+
+        }finally{            
+            this.conectar.fechaBanco();         
+        }
+        this.conectar.conectaBanco();
+        try {
+            this.conectar.executarSQL(
+                   "SELECT "
+                    + "id,"
+                    + "nome,"
+                    + "preco"
+                 + " FROM"
+                     + " produtos"
+                 + " WHERE"
+                     + " id = '" + 7 + "'"
+                + ";"
+            );
+
+            while(this.conectar.getResultSet().next()){               
+                jLabel347.setText("Total: " +  this.conectar.getResultSet().getString(3) + " Gringotts");                
+           }
+
+        } catch (Exception e) {
+            System.out.println("Erro ao puxar preço " +  e.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao puxar preço");
+
+        }finally{            
+            this.conectar.fechaBanco();         
+        }
+        this.conectar.conectaBanco();
+        try {
+            this.conectar.executarSQL(
+                   "SELECT "
+                    + "id,"
+                    + "nome,"
+                    + "preco"
+                 + " FROM"
+                     + " produtos"
+                 + " WHERE"
+                     + " id = '" + 8 + "'"
+                + ";"
+            );
+
+            while(this.conectar.getResultSet().next()){               
+                jLabel296.setText("Total: " +  this.conectar.getResultSet().getString(3) + " Gringotts");                
+           }
+
+        } catch (Exception e) {
+            System.out.println("Erro ao puxar preço " +  e.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao puxar preço");
+
+        }finally{            
+            this.conectar.fechaBanco();         
+        }
+     }
+     
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -375,7 +580,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
         jPanel281 = new javax.swing.JPanel();
         jLabel375 = new javax.swing.JLabel();
         jLabel376 = new javax.swing.JLabel();
-        jLabel377 = new javax.swing.JLabel();
+        historiamagialabel = new javax.swing.JLabel();
         jLabel378 = new javax.swing.JLabel();
         jSeparator24 = new javax.swing.JSeparator();
         sair5 = new javax.swing.JButton();
@@ -4400,9 +4605,9 @@ public class pacotesDeAula extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel377.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel377.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
-        jLabel377.setText("Total: 50 Gringotts");
+        historiamagialabel.setBackground(new java.awt.Color(0, 0, 0));
+        historiamagialabel.setFont(new java.awt.Font("Century Schoolbook", 3, 14)); // NOI18N
+        historiamagialabel.setText("Total: 50 Gringotts");
 
         jLabel378.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gringotts-removebg-preview.png"))); // NOI18N
 
@@ -4462,7 +4667,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
                         .addComponent(jLabel236, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel176Layout.createSequentialGroup()
                         .addGap(287, 287, 287)
-                        .addComponent(jLabel377)
+                        .addComponent(historiamagialabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel378)))
                 .addContainerGap(57, Short.MAX_VALUE))
@@ -4485,7 +4690,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel176Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel378, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel377, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(historiamagialabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -6045,6 +6250,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     }//GEN-LAST:event_sair8ActionPerformed
 
     private void comprarPocoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarPocoesActionPerformed
+        selectPacote(8);
         Compra compra = new Compra();
         compra.usuario.setUsername(usuario.getUsername());
         compra.setVisible(true);
@@ -6064,6 +6270,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     }//GEN-LAST:event_sair7ActionPerformed
 
     private void comprarAstronomiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarAstronomiaActionPerformed
+        selectPacote(7);
         Compra compra = new Compra();
         compra.usuario.setUsername(usuario.getUsername());
         compra.setVisible(true);
@@ -6082,6 +6289,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     }//GEN-LAST:event_sair6ActionPerformed
 
     private void comprarHerbologiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarHerbologiaActionPerformed
+        selectPacote(6);
         Compra compra = new Compra();
         compra.usuario.setUsername(usuario.getUsername());
         compra.setVisible(true);
@@ -6101,6 +6309,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     }//GEN-LAST:event_sair5ActionPerformed
 
     private void comprarHistoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarHistoriaActionPerformed
+        selectPacote(5);
         Compra compra = new Compra();
         compra.usuario.setUsername(usuario.getUsername());
         compra.setVisible(true);
@@ -6120,6 +6329,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     }//GEN-LAST:event_sair4ActionPerformed
 
     private void comprarFeiticosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarFeiticosActionPerformed
+        selectPacote(4);
         Compra compra = new Compra();
         compra.usuario.setUsername(usuario.getUsername());
         compra.setVisible(true);
@@ -6139,6 +6349,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     }//GEN-LAST:event_sair3ActionPerformed
 
     private void comprarDefesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarDefesaActionPerformed
+        selectPacote(3);
         Compra compra = new Compra();
         compra.usuario.setUsername(usuario.getUsername());
         compra.setVisible(true);
@@ -6159,6 +6370,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     }//GEN-LAST:event_sair2ActionPerformed
 
     private void comprarPacoteBasico1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarPacoteBasico1ActionPerformed
+        selectPacote(2);
         Compra compra = new Compra();
         compra.usuario.setUsername(usuario.getUsername());
         compra.setVisible(true);
@@ -6261,6 +6473,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     private javax.swing.JButton fechar7;
     private javax.swing.JButton fechar8;
     private javax.swing.JButton fechar9;
+    private javax.swing.JLabel historiamagialabel;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton2;
@@ -6458,7 +6671,6 @@ public class pacotesDeAula extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel374;
     private javax.swing.JLabel jLabel375;
     private javax.swing.JLabel jLabel376;
-    private javax.swing.JLabel jLabel377;
     private javax.swing.JLabel jLabel378;
     private javax.swing.JLabel jLabel379;
     private javax.swing.JLabel jLabel380;

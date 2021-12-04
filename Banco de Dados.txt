@@ -12,7 +12,7 @@ CREATE TABLE users (
     city varchar(80) NOT null,
     user_name varchar(20) NOT null UNIQUE,
     user_password varchar(20) NOT null,
-    totalgringgots varchar(5) DEFAULT 0   
+    totalgringgots varchar(7) DEFAULT 0   
 );
 
 CREATE TABLE produtos (

@@ -150,6 +150,7 @@ public class escolherTela extends javax.swing.JFrame {
         pacotesDeAula pacotesdeaula = new pacotesDeAula();
         pacotesdeaula.usuario.setUsername(getUser());
         pacotesdeaula.setVisible(true);
+        pacotesdeaula.setLabels();
         dispose();
     }//GEN-LAST:event_comprasActionPerformed
 
