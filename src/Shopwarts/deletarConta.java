@@ -1,6 +1,9 @@
 
 package Shopwarts;
 
+import database.MySQL;
+import javax.swing.JOptionPane;
+
 public class deletarConta extends javax.swing.JFrame {
 
  
@@ -10,6 +13,7 @@ public class deletarConta extends javax.swing.JFrame {
 
     // atributo
    private String user;
+   MySQL conectar = new MySQL(); //acessar os métodos de conexao com o banco
 
     public String getUser() {
         return user;
@@ -31,6 +35,9 @@ public class deletarConta extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Shopwarts");
+        setUndecorated(true);
+        setResizable(false);
 
         jPanel18.setBackground(new java.awt.Color(8, 77, 110));
 
@@ -110,10 +117,28 @@ public class deletarConta extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        this.conectar.conectaBanco();
+         try {
+            this.conectar.updateSQL(
+                "DELETE FROM users "                    
+                    +                    
+                 " WHERE "
+                    + "user_name = '" + user + "'"
+                + ";"
+            );            
+        }catch(Exception e){
+            System.out.println("Erro ao deletar " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao deletar");
+        }finally{
+            this.conectar.fechaBanco();                        
+            JOptionPane.showMessageDialog(null, "Conta deletada. Obrigado por utilizar a Shopwarts ;)");
+        }
+        dispose();
+        new tela_login().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -160,16 +185,11 @@ public class deletarConta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton alterarCadastro;
-    private javax.swing.JButton compras;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JButton sair;
     // End of variables declaration//GEN-END:variables
 
 }

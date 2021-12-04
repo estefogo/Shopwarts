@@ -1,5 +1,8 @@
 package Shopwarts;
 
+import javax.swing.JOptionPane;
+import database.MySQL;
+
 public class pacotesDeAula extends javax.swing.JFrame {
 
     /**
@@ -9,8 +12,40 @@ public class pacotesDeAula extends javax.swing.JFrame {
         initComponents();
     }
     // atributos
-    Aluno usuario = new Aluno();    
+    MySQL conectar = new MySQL();
+    Aluno usuario = new Aluno();
+    Produtos pacote = new Produtos();
 
+    
+     public void selectPacote(int id) {
+        this.conectar.conectaBanco();
+        try {
+            this.conectar.executarSQL(
+                   "SELECT "
+                    + "id,"
+                    + "nome,"
+                    + "preco"
+                 + " FROM"
+                     + " produtos"
+                 + " WHERE"
+                     + " id = '" + id + "'"
+                + ";"
+            );
+
+            while(this.conectar.getResultSet().next()){               
+                pacote.setPacote(this.conectar.getResultSet().getString(2));
+                pacote.setPreco(Integer.parseInt(String.valueOf(this.conectar.getResultSet().getString(3))));
+           }
+
+        } catch (Exception e) {
+            System.out.println("Erro ao puxar preço " +  e.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao puxar preço");
+
+        }finally{
+            System.out.println(pacote.getPreco());
+            this.conectar.fechaBanco();         
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -6143,6 +6178,7 @@ public class pacotesDeAula extends javax.swing.JFrame {
     }//GEN-LAST:event_sair1ActionPerformed
 
     private void comprarPacoteBasicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarPacoteBasicoActionPerformed
+        selectPacote(1);
         Compra compra = new Compra();
         compra.usuario.setUsername(usuario.getUsername());
         compra.setVisible(true);

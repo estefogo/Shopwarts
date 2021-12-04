@@ -25,54 +25,54 @@ public class alteraCadastro extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        selectbtn = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        nomebruxo = new javax.swing.JTextField();
+        usuarioBruxo = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        casabruxo = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel9 = new javax.swing.JLabel();
-        casabruxo1 = new javax.swing.JTextField();
+        nome = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        casabruxo2 = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        houseField = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        casa = new javax.swing.JComboBox<>();
+        alteraUsuario = new javax.swing.JButton();
+        alteraSenha = new javax.swing.JButton();
+        alteraNome = new javax.swing.JButton();
+        alteraDataNasc = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        nomebruxo1 = new javax.swing.JTextField();
+        cidade = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        casabruxo8 = new javax.swing.JTextField();
+        bairro = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
-        casabruxo9 = new javax.swing.JTextField();
+        rua = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        casabruxo10 = new javax.swing.JTextField();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
+        numero = new javax.swing.JTextField();
+        alteraCidade = new javax.swing.JButton();
+        alteraBairro = new javax.swing.JButton();
+        alteraRua = new javax.swing.JButton();
+        alteraNumero = new javax.swing.JButton();
+        alteraCasa = new javax.swing.JButton();
+        senha = new javax.swing.JPasswordField();
+        dataNascimento = new javax.swing.JFormattedTextField();
+        voltar = new javax.swing.JButton();
+        apagarConta = new javax.swing.JButton();
+        voltar1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Alterar Cadastro");
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
 
-        selectbtn.setText("Voltar");
-        selectbtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                selectbtnActionPerformed(evt);
-            }
-        });
-
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
         jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        usuarioBruxo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usuarioBruxoActionPerformed(evt);
+            }
+        });
 
         jLabel5.setText("Usuário");
 
@@ -93,22 +93,42 @@ public class alteraCadastro extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel3.setText("Dados pessoais:");
 
-        houseField.setBackground(new java.awt.Color(204, 204, 204));
-        houseField.setForeground(new java.awt.Color(255, 255, 255));
-        houseField.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Grifinória", "Sonserina", "Lufa-Lufa", "Corvinal" }));
-        houseField.addActionListener(new java.awt.event.ActionListener() {
+        casa.setBackground(new java.awt.Color(204, 204, 204));
+        casa.setForeground(new java.awt.Color(255, 255, 255));
+        casa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Grifinória", "Sonserina", "Lufa-Lufa", "Corvinal" }));
+        casa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                houseFieldActionPerformed(evt);
+                casaActionPerformed(evt);
             }
         });
 
-        jButton1.setText("Alterar");
+        alteraUsuario.setText("Alterar");
+        alteraUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alteraUsuarioActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("Alterar");
+        alteraSenha.setText("Alterar");
+        alteraSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alteraSenhaActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("Alterar");
+        alteraNome.setText("Alterar");
+        alteraNome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alteraNomeActionPerformed(evt);
+            }
+        });
 
-        jButton4.setText("Alterar");
+        alteraDataNasc.setText("Alterar");
+        alteraDataNasc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alteraDataNascActionPerformed(evt);
+            }
+        });
 
         jLabel7.setText("Cidade");
 
@@ -118,21 +138,52 @@ public class alteraCadastro extends javax.swing.JFrame {
 
         jLabel17.setText("Número");
 
-        jButton9.setText("Alterar");
-
-        jButton10.setText("Alterar");
-
-        jButton11.setText("Alterar");
-
-        jButton12.setText("Alterar");
-
-        jButton5.setText("Alterar");
-
-        jButton13.setBackground(new java.awt.Color(255, 0, 0));
-        jButton13.setText("APAGAR CONTA");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        alteraCidade.setText("Alterar");
+        alteraCidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                alteraCidadeActionPerformed(evt);
+            }
+        });
+
+        alteraBairro.setText("Alterar");
+        alteraBairro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alteraBairroActionPerformed(evt);
+            }
+        });
+
+        alteraRua.setText("Alterar");
+        alteraRua.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alteraRuaActionPerformed(evt);
+            }
+        });
+
+        alteraNumero.setText("Alterar");
+        alteraNumero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alteraNumeroActionPerformed(evt);
+            }
+        });
+
+        alteraCasa.setText("Alterar");
+        alteraCasa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alteraCasaActionPerformed(evt);
+            }
+        });
+
+        dataNascimento.setBackground(new java.awt.Color(255, 255, 255));
+        dataNascimento.setBorder(null);
+        dataNascimento.setForeground(new java.awt.Color(0, 0, 0));
+        try {
+            dataNascimento.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####-##-##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        dataNascimento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dataNascimentoActionPerformed(evt);
             }
         });
 
@@ -141,61 +192,57 @@ public class alteraCadastro extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel6)
-                                    .addComponent(casabruxo)
-                                    .addComponent(jLabel9)
-                                    .addComponent(casabruxo1)
-                                    .addComponent(jLabel10)
-                                    .addComponent(casabruxo2)
-                                    .addComponent(nomebruxo, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel15)
-                                    .addComponent(jLabel3))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(houseField, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jLabel5)
+                                .addComponent(jLabel6)
+                                .addComponent(jLabel9)
+                                .addComponent(nome)
+                                .addComponent(jLabel10)
+                                .addComponent(usuarioBruxo, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)
+                                .addComponent(senha))
+                            .addComponent(dataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(alteraUsuario, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(alteraSenha, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(alteraNome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(alteraDataNasc, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(0, 257, Short.MAX_VALUE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel8)
-                                    .addComponent(casabruxo8)
-                                    .addComponent(jLabel16)
-                                    .addComponent(casabruxo9)
-                                    .addComponent(jLabel17)
-                                    .addComponent(nomebruxo1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(casabruxo10, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 20, Short.MAX_VALUE)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel15)
+                            .addComponent(jLabel3))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(casa, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 144, Short.MAX_VALUE)
+                        .addComponent(alteraCasa, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(0, 257, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel8)
+                            .addComponent(bairro)
+                            .addComponent(jLabel16)
+                            .addComponent(rua)
+                            .addComponent(jLabel17)
+                            .addComponent(cidade, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(numero, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 20, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(alteraCidade, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(alteraBairro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(alteraRua, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(alteraNumero, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -212,26 +259,26 @@ public class alteraCadastro extends javax.swing.JFrame {
                                 .addComponent(jLabel5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(nomebruxo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton1))
+                                    .addComponent(usuarioBruxo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(alteraUsuario))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel6)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(casabruxo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton2))
+                                    .addComponent(alteraSenha)
+                                    .addComponent(senha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(casabruxo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton3))
+                                    .addComponent(nome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(alteraNome))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel10)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(casabruxo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton4))
+                                    .addComponent(alteraDataNasc)
+                                    .addComponent(dataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel15))
                             .addGroup(jPanel2Layout.createSequentialGroup()
@@ -240,34 +287,54 @@ public class alteraCadastro extends javax.swing.JFrame {
                                 .addComponent(jLabel7)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(nomebruxo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton9))
+                                    .addComponent(cidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(alteraCidade))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel8)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(casabruxo8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton10))
+                                    .addComponent(bairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(alteraBairro))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel16)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(casabruxo9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton11))
+                                    .addComponent(rua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(alteraRua))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel17)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(casabruxo10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton12))))
+                                    .addComponent(numero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(alteraNumero))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(houseField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton5))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton13)
-                .addGap(21, 21, 21))
+                            .addComponent(casa, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(alteraCasa))))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
+
+        voltar.setText("Voltar");
+        voltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                voltarActionPerformed(evt);
+            }
+        });
+
+        apagarConta.setBackground(new java.awt.Color(255, 0, 0));
+        apagarConta.setText("APAGAR CONTA");
+        apagarConta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                apagarContaActionPerformed(evt);
+            }
+        });
+
+        voltar1.setText("Finalizar");
+        voltar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                voltar1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -276,20 +343,29 @@ public class alteraCadastro extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(8, 8, 8)
-                        .addComponent(selectbtn)))
-                .addContainerGap())
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(voltar, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(voltar1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(apagarConta, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(17, 17, 17))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addComponent(selectbtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(voltar)
+                    .addComponent(apagarConta)
+                    .addComponent(voltar1))
+                .addGap(27, 27, 27))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -307,24 +383,88 @@ public class alteraCadastro extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void selectbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectbtnActionPerformed
+    private void voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarActionPerformed
         new escolherTela().setVisible(true);
         escolherTela escolhertela = new escolherTela();
         escolhertela.setUser(usuario.getUsername());
         escolhertela.setVisible(true);
         dispose();        
-    }//GEN-LAST:event_selectbtnActionPerformed
+    }//GEN-LAST:event_voltarActionPerformed
 
-    private void houseFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_houseFieldActionPerformed
+    private void casaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_casaActionPerformed
 
-    }//GEN-LAST:event_houseFieldActionPerformed
+    }//GEN-LAST:event_casaActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void apagarContaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apagarContaActionPerformed
         deletarConta deletarconta = new deletarConta();
         deletarconta.setUser(usuario.getUsername());
         deletarconta.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_apagarContaActionPerformed
+
+    private void alteraUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alteraUsuarioActionPerformed
+        // TODO add your handling code here:
+        usuario.alteraCadastro(usuario.getUsername(), this.usuarioBruxo.getText(), "user_name");
+        usuario.setUsername(this.usuarioBruxo.getText());
+    }//GEN-LAST:event_alteraUsuarioActionPerformed
+
+    private void usuarioBruxoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuarioBruxoActionPerformed
+        
+    }//GEN-LAST:event_usuarioBruxoActionPerformed
+
+    private void alteraSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alteraSenhaActionPerformed
+        usuario.alteraCadastro(usuario.getUsername(), this.senha.getText(), "user_password");
+        usuario.setUsername(this.usuarioBruxo.getText());
+    }//GEN-LAST:event_alteraSenhaActionPerformed
+
+    private void alteraNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alteraNomeActionPerformed
+        usuario.alteraCadastro(usuario.getUsername(), this.nome.getText(), "nome");
+        usuario.setUsername(this.usuarioBruxo.getText());
+    }//GEN-LAST:event_alteraNomeActionPerformed
+
+    private void alteraDataNascActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alteraDataNascActionPerformed
+        usuario.alteraCadastro(usuario.getUsername(), this.dataNascimento.getText(), "birthday");
+        usuario.setUsername(this.usuarioBruxo.getText());
+    }//GEN-LAST:event_alteraDataNascActionPerformed
+
+    private void dataNascimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dataNascimentoActionPerformed
+
+    }//GEN-LAST:event_dataNascimentoActionPerformed
+
+    private void alteraCasaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alteraCasaActionPerformed
+        String casa = String.valueOf(this.casa.getSelectedItem());
+        usuario.alteraCadastro(usuario.getUsername(), casa, "house");
+        usuario.setUsername(this.usuarioBruxo.getText());      
+    }//GEN-LAST:event_alteraCasaActionPerformed
+
+    private void alteraCidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alteraCidadeActionPerformed
+        usuario.alteraCadastro(usuario.getUsername(),this.cidade.getText(), "city");
+        usuario.setUsername(this.usuarioBruxo.getText());  
+    }//GEN-LAST:event_alteraCidadeActionPerformed
+
+    private void alteraBairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alteraBairroActionPerformed
+        usuario.alteraCadastro(usuario.getUsername(),this.bairro.getText(), "district");
+        usuario.setUsername(this.usuarioBruxo.getText());
+    }//GEN-LAST:event_alteraBairroActionPerformed
+
+    private void alteraRuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alteraRuaActionPerformed
+        usuario.alteraCadastro(usuario.getUsername(),this.rua.getText(), "street");
+        usuario.setUsername(this.usuarioBruxo.getText());
+    }//GEN-LAST:event_alteraRuaActionPerformed
+
+    private void alteraNumeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alteraNumeroActionPerformed
+        usuario.alteraCadastro(usuario.getUsername(),this.numero.getText(), "streetn");
+        usuario.setUsername(this.usuarioBruxo.getText());
+    }//GEN-LAST:event_alteraNumeroActionPerformed
+
+    private void voltar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltar1ActionPerformed
+        // TODO add your handling code here:
+        new escolherTela().setVisible(true);
+        escolherTela escolhertela = new escolherTela();
+        escolhertela.setUser(usuario.getUsername());
+        escolhertela.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_voltar1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -362,23 +502,20 @@ public class alteraCadastro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField casabruxo;
-    private javax.swing.JTextField casabruxo1;
-    private javax.swing.JTextField casabruxo10;
-    private javax.swing.JTextField casabruxo2;
-    private javax.swing.JTextField casabruxo8;
-    private javax.swing.JTextField casabruxo9;
-    private javax.swing.JComboBox<String> houseField;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton alteraBairro;
+    private javax.swing.JButton alteraCasa;
+    private javax.swing.JButton alteraCidade;
+    private javax.swing.JButton alteraDataNasc;
+    private javax.swing.JButton alteraNome;
+    private javax.swing.JButton alteraNumero;
+    private javax.swing.JButton alteraRua;
+    private javax.swing.JButton alteraSenha;
+    private javax.swing.JButton alteraUsuario;
+    private javax.swing.JButton apagarConta;
+    private javax.swing.JTextField bairro;
+    private javax.swing.JComboBox<String> casa;
+    private javax.swing.JTextField cidade;
+    private javax.swing.JFormattedTextField dataNascimento;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
@@ -393,8 +530,12 @@ public class alteraCadastro extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField nomebruxo;
-    private javax.swing.JTextField nomebruxo1;
-    private javax.swing.JButton selectbtn;
+    private javax.swing.JTextField nome;
+    private javax.swing.JTextField numero;
+    private javax.swing.JTextField rua;
+    private javax.swing.JPasswordField senha;
+    private javax.swing.JTextField usuarioBruxo;
+    private javax.swing.JButton voltar;
+    private javax.swing.JButton voltar1;
     // End of variables declaration//GEN-END:variables
 }

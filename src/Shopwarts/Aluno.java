@@ -1,10 +1,13 @@
 package Shopwarts;
 
 import database.MySQL;
+import javax.swing.JOptionPane;
 
 
 public class Aluno {
     // atributos   
+    MySQL conectar = new MySQL();
+    
     private String username = "null";
     private String userpassword = "null";
     private String birthday = "";
@@ -121,4 +124,24 @@ public class Aluno {
     house = "";
     gringgots = "";
     }
-}
+    
+    public void alteraCadastro(String user, String dado, String atributo) {
+         this.conectar.conectaBanco();
+         try {
+            this.conectar.updateSQL(
+                "UPDATE users SET "                    
+                    + atributo + " = '" + dado + "'"                    
+                + " WHERE "
+                    + "user_name = '" + user + "'"
+                + ";"
+            );            
+        }catch(Exception e){
+            System.out.println("Erro ao atualizar " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao atualizar cadastro");
+        }finally{
+            this.conectar.fechaBanco();                        
+            JOptionPane.showMessageDialog(null, "Cadastro atualizado com sucesso.");
+        }
+    }
+              
+    }

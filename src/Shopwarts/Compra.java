@@ -1404,7 +1404,7 @@ public class Compra extends javax.swing.JFrame {
         precoEntrega = 0;
         precoFrete.setText("Frete grátis");
         enderecoEntrega.setText("Departamento de Compras de Hogwarts");
-        totalCompra.setText("G$50,00");
+        totalCompra.setText("G$"+ PRECO PRODUTO/PACOTE + ",00");
        // aluno.precoCompra = 50;
         
         Abas.setSelectedIndex(1);

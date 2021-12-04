@@ -143,6 +143,7 @@ public class escolherTela extends javax.swing.JFrame {
         alteracadastro.usuario.setUsername(getUser());
         alteracadastro.setVisible(true);
         dispose();
+        
     }//GEN-LAST:event_alterarCadastrojButton1ActionPerformed
 
     private void comprasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprasActionPerformed
