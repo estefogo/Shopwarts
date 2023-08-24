@@ -12,7 +12,7 @@ Guilherme de Almeida Pereira
 <br>Fábio Volpi de Deus
 
 <h3>Interface:</h3>
-<br><b>Splash:</b>
+<b>Splash:</b>
 <br>![image](https://github.com/estefogo/Shopwarts/assets/79616452/3efb6a2e-41f7-49cf-98b8-8695173b01e8)
 <br>
 <br><b>Tela de login:</b>
@@ -45,7 +45,7 @@ Guilherme de Almeida Pereira
 <br>![image](https://github.com/estefogo/Shopwarts/assets/79616452/e7a6b19b-fb5b-4736-a1bf-1fa9bf8b9751)
 <br>
 <br><b>Selecionar método de entrega:</b>
-<br>![image](https://github.com/estefogo/Shopwarts/assets/79616452/ae1c75d5-8d75-4924-af3f-5200d6e35834)
+<br> ![image](https://github.com/estefogo/Shopwarts/assets/79616452/ae1c75d5-8d75-4924-af3f-5200d6e35834)
 <br>
 <br><b>Confirmação de compra:</b>
 <br>![image](https://github.com/estefogo/Shopwarts/assets/79616452/6c77e88c-010c-41ce-bc7d-6ae861828475)
