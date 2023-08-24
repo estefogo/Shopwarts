@@ -28,7 +28,7 @@ Guilherme de Almeida Pereira
 ![image](https://github.com/estefogo/Shopwarts/assets/79616452/447192c5-39a6-4a1e-93f4-af532051cbee)
 <br>
 <br><b>Itens separados por matéria:</b>
-![image](https://github.com/estefogo/Shopwarts/assets/79616452/1e999ecd-1804-4acd-993f-3b78dbbc91a1)
+<br>![image](https://github.com/estefogo/Shopwarts/assets/79616452/1e999ecd-1804-4acd-993f-3b78dbbc91a1)
 <br>
 <br>![image](https://github.com/estefogo/Shopwarts/assets/79616452/24dd48a8-f62e-45b8-8ecb-ddaf611fed0e)
 <br>
