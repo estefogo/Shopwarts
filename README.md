@@ -16,13 +16,13 @@ Guilherme de Almeida Pereira
 <br>![image](https://github.com/estefogo/Shopwarts/assets/79616452/3efb6a2e-41f7-49cf-98b8-8695173b01e8)
 <br>
 <br><b>Tela de login:</b>
-![image](https://github.com/estefogo/Shopwarts/assets/79616452/18e72c28-49d7-4255-9ec2-1f720d82ea6d)
+<br>![image](https://github.com/estefogo/Shopwarts/assets/79616452/18e72c28-49d7-4255-9ec2-1f720d82ea6d)
 <br>
 <br><b>Criar conta:</b>
-![image](https://github.com/estefogo/Shopwarts/assets/79616452/3a1157f7-cbd0-4d45-bf05-e70596597aaa)
+<br>![image](https://github.com/estefogo/Shopwarts/assets/79616452/3a1157f7-cbd0-4d45-bf05-e70596597aaa)
 <br>
 <br><b>Menu:</b>
-![image](https://github.com/estefogo/Shopwarts/assets/79616452/4ea12d8e-8595-4ab7-8682-ee17de95f814)
+<br>![image](https://github.com/estefogo/Shopwarts/assets/79616452/4ea12d8e-8595-4ab7-8682-ee17de95f814)
 <br>
 <br><b>Atualizar cadastro:</b>
 ![image](https://github.com/estefogo/Shopwarts/assets/79616452/447192c5-39a6-4a1e-93f4-af532051cbee)
@@ -55,4 +55,6 @@ Guilherme de Almeida Pereira
 <br>![image](https://github.com/estefogo/Shopwarts/assets/79616452/718fabd2-7fc4-4ef9-9c10-c5c4764a7a32)
 <br>
 <br><b>Cadastro de produtos (usuário administrador):</b>
-<br>![image](https://github.com/estefogo/Shopwarts/assets/79616452/b436e862-ddc7-466e-81a6-d76fe764c74d)
+<br> 
+
+![image](https://github.com/estefogo/Shopwarts/assets/79616452/b436e862-ddc7-466e-81a6-d76fe764c74d)
